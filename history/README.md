@@ -205,6 +205,37 @@ Python acts as the **integration layer across all of them**.
 
 ---
 
+## 4.5 Industry Support and Corporate Adoption
+
+Python's rise was not driven only by academia, education, or open-source volunteers. It was also reinforced by sustained industry use behind the scenes.
+
+### Guido van Rossum's industry path
+
+Guido's own career mirrors Python's move into mainstream industry:
+
+* **December 2005 - December 2012:** Google
+* **January 2013 - October 2019:** Dropbox
+* **October 2019 - October 2020:** retirement
+* **Since November 2020:** Microsoft
+
+At Microsoft, this has been a single employment period, but in two internal roles: first in the **Developer Division**, and later in the **Office of the CTO**.
+
+### Why this matters
+
+These moves are historically important because they show that Python was not just admired publicly; it was trusted inside large production environments:
+
+* **Google** used Python in major engineering contexts, and Guido worked there on internal tooling and **Google App Engine**.
+* **Dropbox** relied heavily on Python. Dropbox has described periods when its server and desktop client software were written almost entirely in Python, and the company later carried out one of the largest Python 3 migrations in industry.
+* **Microsoft** moved from being mainly a platform vendor for Python users to directly funding core Python work, including the **Faster CPython** effort.
+
+### Broader industry significance
+
+By the 2010s and 2020s, Python had become deeply embedded in production systems across cloud platforms, web services, automation teams, data engineering groups, and AI tooling. In many companies, Python was not always the public-facing headline technology, but it was often part of the internal glue code, service logic, analysis workflows, testing infrastructure, and deployment tooling that kept systems running.
+
+This is one reason Python became so durable: it succeeded not only as a teaching language, but also as a language that major companies were willing to use, maintain, and invest in over long periods of time.
+
+---
+
 # 5. Conceptual Summary
 
 Python’s evolution can be understood in three phases:
