@@ -4,19 +4,19 @@ Below is a **concise but academically grounded overview** of Python’s historic
 
 # 1. Origins and Early Development (1980s–1990s)
 
-![Image](../img/history/history_01.png)
+![Portrait of Guido van Rossum](../img/history/guido-van-rossum-portrait.png)
 
-![Image](../img/history/history_02.png)
+![Terminal running a small Python hello world program](../img/history/python-hello-world-terminal.png)
 
-![Image](../img/history/history_03.png)
+![Screenshot of the 1994 comp.lang.misc announcement for Python 1.0](../img/history/python-1-0-announce-post.png)
 
-![Image](../img/history/history_04.png)
+![Python documentation page showing the introduction, Hello World, and basic topics](../img/history/python-documentation-introduction.png)
 
-![Image](../img/history/history_05.png)
+![Early photo of Guido van Rossum outdoors](../img/history/young-guido-van-rossum-photo.png)
 
-![Image](../img/history/history_06.png)
+![Python 3 interpreter open in a terminal session](../img/history/python-3-interpreter-terminal.png)
 
-![Image](../img/history/history_07.png)
+![Early PyPI package index page in a web browser](../img/history/pypi-package-index-page.png)
 
 * **Creator:** Guido van Rossum
 * **Start:** Late 1980s at CWI
@@ -40,17 +40,17 @@ Python emerged as a **scripting and glue language**, designed to connect systems
 
 # 2. Consolidation and Growth (2000–2010)
 
-![Image](../img/history/history_08.png)
+![Diagram grouping major parts of the Python standard library](../img/history/python-standard-library-diagram.png)
 
-![Image](../img/history/history_09.png)
+![Python community members talking at a conference](../img/history/python-community-conference-photo.png)
 
-![Image](../img/history/history_10.png)
+![Code snippet showing the syntax of a Python list comprehension](../img/history/python-list-comprehension-example.png)
 
-![Image](../img/history/history_11.png)
+![Table listing Python versions and their release dates](../img/history/python-version-release-table.png)
 
-![Image](../img/history/history_12.png)
+![Group photo of Python contributors and community members](../img/history/python-contributors-group-photo.png)
 
-![Image](../img/history/history_13.png)
+![Diagram showing Python modules organized into packages](../img/history/python-modules-and-packages-diagram.png)
 
 ### Major events:
 
@@ -73,13 +73,13 @@ Python emerged as a **scripting and glue language**, designed to connect systems
 
 # 3. Modern Python Era (2010–Present)
 
-![Image](../img/history/history_14.png)
+![Example comparing poor and good Python variable naming](../img/history/python-variable-naming-best-practices.png)
 
-![Image](../img/history/history_15.png)
+![NumPy array diagram illustrating axis 0, axis 1, and axis 2](../img/history/numpy-array-axes-diagram.png)
 
-![Image](../img/history/history_16.png)
+![Jupyter notebook example creating and displaying a pandas DataFrame](../img/history/pandas-dataframe-notebook-example.png)
 
-![Image](../img/history/history_17.png)
+![Jupyter-based data analysis environment with code, charts, and console output](../img/history/jupyter-data-analysis-environment.png)
 
 ### Key transition:
 
@@ -135,17 +135,17 @@ This directly aligns with real-world institutional needs:
 
 ## 4.2 Typical Data Workflow Architecture
 
-![Image](../img/history/history_18.png)
+![ETL pipeline diagram with sources, transform stage, warehouse, and analysis output](../img/history/etl-pipeline-overview.png)
 
-![Image](../img/history/history_19.png)
+![Python ETL workflow using requests, pandas, and DuckDB](../img/history/python-etl-requests-pandas-duckdb.png)
 
-![Image](../img/history/history_20.png)
+![Data analysis workflow from loaded data through analysis, outlier detection, and insights](../img/history/data-analysis-workflow-diagram.png)
 
-![Image](../img/history/history_21.png)
+![Process diagram for building an ETL pipeline using Python](../img/history/build-etl-pipeline-using-python.png)
 
-![Image](../img/history/history_22.png)
+![Diagram showing Excel, pandas, databases, and CSV files connected through Python](../img/history/interactive-data-analysis-python-excel.png)
 
-![Image](../img/history/history_23.png)
+![Simple data pipeline flowchart with extract, transform, load, and analyze stages](../img/history/simple-data-pipeline-flowchart.png)
 
 ### Pipeline structure:
 
