@@ -1,0 +1,5 @@
+
+•        Python sintakses un pamatkonstrukciju zināšanas: Izprot un efektīvi izmanto mainīgos, datu tipus, vadības struktūras (piemēram, if, for, while), funkcijas, klases, izņēmumus un moduļus.
+•        Python standarta bibliotēkas un ekosistēmas pārzināšana: Spēj izmantot iebūvētos moduļus (piemēram, datetime, collections, os, re, json) un ārējās bibliotēkas (piemēram, pandas, requests, matplotlib) skriptu rakstīšanai, datu apstrādei, automatizācijai un tīmekļa mijiedarbībai.
+•        Izpratne par Pythonic praksēm un darbības režīma uzvedību: Izpratne par labākajām praksēm, piemēram, sarakstu izpratni, konteksta pārvaldniekiem, dekoratoriem, un saprot tādus jēdzienus kā maināmība, apjoma noteikšana, atmiņas pārvaldība un globālā interpretatora bloķēšana (GIL).
+* Mācību programmā jāiekļauj praktiska un teorētiska apmācība par CSP klasifikāciju sistēmām, to versijām un pārejas tabulām, adrešu un uzņēmumu reģistra datu izmantošanu, kā arī CSP izstrādātajām funkcijām un kodu sagatavēm, pielāgojot saturu CSP infrastruktūrai, datu struktūrām un sistēmu risinājumiem.

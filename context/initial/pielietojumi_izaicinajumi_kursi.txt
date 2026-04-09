@@ -1,0 +1,24 @@
+Student supervisor notes:
+
+Galvenie pielietojumi:
+
+datu sagatavošana, apvienošana un transformācija no dažādiem avotiem (SQL, Postrgersql , dažādi datu failu tipi csv, accdb, excel, json etc );
+datu plūsmu automatizācija un uzturēšana (regulāri procesi, ETL/ELT tipa darbības);
+datu validācija un kvalitātes kontrole (loģiskās un konsekvences pārbaudes);
+procesu standartizācija un reproducējamība (t.sk. koplietošanas funkcijas, iekšējas bibliotēkas);
+datu integrācija starp sistēmām un darbs ar API;
+atbalsts datu arhitektūras risinājumiem (strukturēšana, datu modeļi);
+drošas datu apstrādes pamatelementi (piem., datu piekļuves un apstrādes kontrole);
+vienkārši monitoringa un analīzes risinājumi (piem., responsa vai kvalitātes rādītāji)
+ 
+
+Galvenie izaicinājumi:
+
+Datu kvalitāte un dažādi datu formāti - Dati nāk no dažādiem avotiem (apsekojumi, administratīvie dati, ietvari) ar atšķirīgu struktūru, definīcijām un kvalitāti; bieži nepieciešama saskaņošana un papildus validācija.
+Procesu standartizācijas trūkums - vienotas pieejas izveide datu sagatavošanai, validācijai un dokumentēšanai.
+Datu plūsmu pārvaldība - Nav vienmēr skaidri definētas datu plūsmas (no avota līdz gala rezultātam)
+Validācijas pieejas trūkums vai nekonsekvence - Pārbaudes bieži ir ad hoc, nevis strukturētas un atkārtoti izmantojamas.
+Integrācija ar esošajiem risinājumiem (piem., R);
+Reproducējamība un versiju kontrole (git, GitLab)
+
+No citiem kursiem kā piemēram SQL iegūtas pirmās novērtēšanas anketas un dalībnieki norāda, ka vairāk bija nepieciešama praktiska darbība, kur uzdevumi tiek pēc tam arī pārrunāti, lai saprastu vai tiek darīts pareizi.
