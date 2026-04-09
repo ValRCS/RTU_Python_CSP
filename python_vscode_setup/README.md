@@ -24,43 +24,62 @@ Ieteikums:
 
 ### Ieteicamais variants 2026. gadā
 
-Oficiāli ieteiktais ceļš tagad ir `Python Install Manager`.
+Oficiāli ieteiktais ceļš 2026. gadā ir `Python Install Manager`, taču praksē tas vēl nav līdz galam noslīpēts un mācību vidē dažkārt rada lieku neskaidrību.
+
+Tāpēc kursam joprojām ieteicamais variants ir uzstādīt konkrētu stabilu Python versiju tieši no `python.org`, proti, `Python 3.14.4`.
+
+Ieteicamā praktiskā pieeja:
 
 1. Atveriet:
-    https://www.python.org/downloads/
-2. Lejupielādējiet un uzstādiet `Python Install Manager`
-    Alternatīva: var izmantot arī Microsoft Store versiju.
-3. Pēc uzstādīšanas atveriet `PowerShell` un pārbaudiet, vai komandas strādā:
+    https://www.python.org/downloads/release/python-3144/
+2. Lejupielādējiet `Windows installer (64-bit)` savai sistēmai
+3. Uzstādīšanas laikā atzīmējiet `Add Python to PATH`, ja šī opcija tiek piedāvāta
+4. Pabeidziet instalāciju
+5. Pēc uzstādīšanas atveriet `PowerShell` un pārbaudiet, vai komandas strādā:
 
 ```powershell
 python --version
 py --version
 ```
 
-4. Ja Python vēl nav uzstādīts kā `runtime`, uzstādiet jaunāko stabilo versiju:
+Ja viss ir kārtībā, jums jāredz Python 3.14.4 vai 3.14.x.
+
+### Par `Python Install Manager`
+
+`Python Install Manager` joprojām ir oficiāli ieteiktais virziens no Python dokumentācijas puses, tāpēc to ir vērts zināt. Ja vēlaties to izmēģināt, izmantojiet:
 
 ```powershell
+py --version
 py install 3.14
 ```
 
-5. Pārbaudiet vēlreiz:
+Tomēr kursa vajadzībām drošāks un paredzamāks variants joprojām ir tiešā `Python 3.14.4` instalācija.
+
+### Kāpēc nav ieteicama Microsoft Store versija
+
+Microsoft Store variants tehniski var strādāt, bet to labāk izvairīties izmantot mācību nolūkiem, jo tas mēdz radīt:
+- neskaidrības ar `App execution aliases`
+- konfliktus starp `python`, `py` un citām jau esošām instalācijām
+- grūtāk prognozējamu uzvedību, ja datorā vēlāk tiek pievienotas citas Python versijas
+
+Tāpēc šim kursam ieteikums ir:
+- neizmantot Microsoft Store versiju, ja vien nav ļoti konkrēts iemesls
+- izvēlēties tiešo `python.org` instalāciju
+
+Ja `Python Install Manager` jau ir uzstādīts, tas nav kritiski, bet kursa darbam svarīgākais ir tas, lai gala rezultātā jums būtu skaidri pieejams konkrēts Python `interpreter`, vēlams `Python 3.14.4`.
+
+Pārbaude pēc uzstādīšanas:
 
 ```powershell
 python --version
 py --version
 ```
 
-Ja viss ir kārtībā, jums jāredz Python 3.14.x.
-
 ### Alternatīva, ja datorā ir ierobežojumi
-
-Ja organizācijas datorā nav atļauts izmantot Store vai MSIX uzstādīšanu:
+Ja datorā ir ierobežojumi un nevarat uzstādīt Python, varat izmantot `Anaconda` vai `Miniconda` platformu, kas nodrošina Python vidi bez nepieciešamības veikt tradicionālu instalāciju. Tomēr šī pieeja var būt sarežģītāka iesācējiem, tāpēc to ieteicams tikai tad, ja tiešām nav citas iespējas.
 - izmantojiet `python.org` lejupielādes lapu
 - vai lūdziet IT nodaļai uzstādīt Python caur oficiālo instalācijas rīku
 
-### Svarīga piezīme
-
-Vecais Windows `full installer` ceļš joprojām var būt sastopams, bet no Python 3.14 tas jau ir novecojis (`deprecated`). Tāpēc šajā materiālā par pamata variantu izmantojam `Python Install Manager` plūsmu.
 
 ## macOS (Apple Silicon un Intel)
 
@@ -94,7 +113,7 @@ macOS sistēmā bieži jau ir Apple pārvaldīts `python3`, bet tas var nebūt t
 
 ## Pamatojums
 
-Bez Python uzstādīšanas nevar palaist Python programmas, instalēt bibliotēkas vai izmantot notebook. Windows sadaļa ir precizēta atbilstoši oficiālajai 2026. gada pieejai, kur galvenais ceļš ir `Python Install Manager`.
+Bez Python uzstādīšanas nevar palaist Python programmas, instalēt bibliotēkas vai izmantot notebook. Windows sadaļa ir precizēta atbilstoši oficiālajai 2026. gada pieejai, kur galvenais ceļš ir `Python Install Manager`, bet pragmatiski joprojām ieteicams izmantot tiešo `python.org` instalāciju, lai izvairītos no neskaidrībām. macOS sadaļa ietver svarīgu sertifikātu uzstādīšanu, kas nepieciešama drošai Python darbībai.
 
 ---
 
