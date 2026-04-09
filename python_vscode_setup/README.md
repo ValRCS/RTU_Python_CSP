@@ -1,347 +1,548 @@
-# 🧰 Python + Visual Studio Code uzstādīšana (Windows + macOS, 2026)
+# Python + Visual Studio Code uzstādīšana (Windows + macOS, aktuāli 2026-04-09)
 
-## 🎯 Mērķis
+## Mērķis
 
 Pēc šīs uzstādīšanas jūs spēsiet:
 - palaist Python programmas
-- strādāt ar Jupyter notebook (.ipynb)
+- strādāt ar Jupyter notebook failiem (.ipynb)
 - apstrādāt Excel failus ar Python (`pandas`, `openpyxl`)
+- ērti strādāt VS Code vidē ar pareizi izvēlētu `interpreter` un `kernel`
 
 ---
 
 # 1. Python uzstādīšana
 
-## 🪟 Windows 10/11
+## Kas šobrīd ir aktuāli
 
-1. Atveriet: https://www.python.org/downloads/
-2. Lejupielādējiet Python 3.x
-3. Instalācijas laikā:
-   ☑ Add Python to PATH
-4. Install Now
+2026. gada 9. aprīlī jaunākais stabilais Python 3 izlaidums ir `Python 3.14.4`.
 
-Pārbaude (atverot cmd vai powershell):
-```
+Ieteikums:
+- instalējiet jaunāko stabilo Python 3 versiju
+- neizvēlieties `alpha`, `beta` vai citus `pre-release` izlaidumus
+
+## Windows 10/11
+
+### Ieteicamais variants 2026. gadā
+
+Oficiāli ieteiktais ceļš tagad ir `Python Install Manager`.
+
+1. Atveriet:
+    https://www.python.org/downloads/
+2. Lejupielādējiet un uzstādiet `Python Install Manager`
+    Alternatīva: var izmantot arī Microsoft Store versiju.
+3. Pēc uzstādīšanas atveriet `PowerShell` un pārbaudiet, vai komandas strādā:
+
+```powershell
 python --version
-```
-vai:
-```
 py --version
 ```
 
-## 🍎 macOS (M1/M2/M3)
+4. Ja Python vēl nav uzstādīts kā `runtime`, uzstādiet jaunāko stabilo versiju:
 
-1. Atveriet: https://www.python.org/downloads/macos/
-2. Lejupielādējiet Python 3.x (universal installer)
-3. Instalējiet
-
-Pārbaude:
+```powershell
+py install 3.14
 ```
+
+5. Pārbaudiet vēlreiz:
+
+```powershell
+python --version
+py --version
+```
+
+Ja viss ir kārtībā, jums jāredz Python 3.14.x.
+
+### Alternatīva, ja datorā ir ierobežojumi
+
+Ja organizācijas datorā nav atļauts izmantot Store vai MSIX uzstādīšanu:
+- izmantojiet `python.org` lejupielādes lapu
+- vai lūdziet IT nodaļai uzstādīt Python caur oficiālo instalācijas rīku
+
+### Svarīga piezīme
+
+Vecais Windows `full installer` ceļš joprojām var būt sastopams, bet no Python 3.14 tas jau ir novecojis (`deprecated`). Tāpēc šajā materiālā par pamata variantu izmantojam `Python Install Manager` plūsmu.
+
+## macOS (Apple Silicon un Intel)
+
+1. Atveriet:
+    https://www.python.org/downloads/macos/
+2. Lejupielādējiet jaunāko `macOS installer (.pkg)`
+3. Instalējiet to ar noklusējuma iestatījumiem
+4. Pēc instalācijas atveriet mapi:
+
+```text
+/Applications/Python 3.14/
+```
+
+5. Palaidiet:
+
+```text
+Install Certificates.command
+```
+
+Tas pabeidz SSL sertifikātu uzstādīšanu Python videi.
+
+6. Atveriet `Terminal` un pārbaudiet:
+
+```bash
 python3 --version
 ```
 
-⚠️ macOS vienmēr izmantojiet `python3`, nevis `python`
+### Svarīga piezīme par macOS
+
+macOS sistēmā bieži jau ir Apple pārvaldīts `python3`, bet tas var nebūt tas, kuru vēlaties izmantot ikdienas darbam. Tāpēc kursam izmantojiet Python no `python.org` un komandu `python3`.
 
 ## Pamatojums
 
-Šis solis ir nepieciešams, jo bez Python instalācijas nav iespējams palaist Python programmas vai izmantot bibliotēkas datu apstrādei. Windows vidē `Add Python to PATH` ļauj vienkārši izsaukt Python no komandrindas, savukārt macOS vidē `python3` palīdz izvairīties no konflikta ar sistēmas Python interpretatoru vai tā neesamību.
+Bez Python uzstādīšanas nevar palaist Python programmas, instalēt bibliotēkas vai izmantot notebook. Windows sadaļa ir precizēta atbilstoši oficiālajai 2026. gada pieejai, kur galvenais ceļš ir `Python Install Manager`.
 
 ---
 
 # 2. Visual Studio Code uzstādīšana
 
-👉 https://code.visualstudio.com/
-
-Instalējiet un atveriet.
+1. Atveriet:
+    https://code.visualstudio.com/
+2. Lejupielādējiet un instalējiet `Visual Studio Code`
+3. Atveriet programmu
 
 ## Pamatojums
 
-Visual Studio Code ir darba vide, kurā būs ērti rakstīt, palaist un labot Python kodu. Bez redaktora un tā integrācijas rīkiem darbs ar projektiem, failiem un notebook būtu ievērojami neērtāks.
+VS Code būs jūsu galvenā darba vide Python kodiem, notebook failiem un projekta failu pārvaldībai.
 
 ---
 
-# 3. Extensions uzstādīšana
+# 3. Nepieciešamie Extensions VS Code vidē
 
-VS Code instalējiet:
+Atveriet `Extensions` skatu (`Ctrl+Shift+X` vai `Cmd+Shift+X`) un uzstādiet:
 
-- Python (Microsoft)
-- Jupyter (Microsoft)
+- `Python` (Microsoft)
+- `Jupyter` (Microsoft)
+
+Parasti `Python` paplašinājums automātiski uzstāda vai aktivizē saistītos komponentus, piemēram, `Pylance`. Atsevišķi to uzstādīt parasti nav nepieciešams, ja vien VS Code to īpaši neprasa.
 
 ## Pamatojums
 
-Šie paplašinājumi piešķir VS Code atbalstu Python sintaksei, koda palaišanai, interpretatora izvēlei un Jupyter notebook darbībai. Bez tiem VS Code būtu tikai vispārīgs teksta redaktors, nevis pilnvērtīga Python darba vide.
+Šie `Extensions` nodrošina:
+- Python sintakses atbalstu
+- `interpreter` izvēli
+- koda palaišanu
+- `Jupyter notebook` atbalstu
+- `kernel` izvēli notebook failiem
 
 ---
 
 # 4. Git uzstādīšana
 
-## 🪟 Windows 10/11
+## Windows 10/11
 
-1. Atveriet: https://git-scm.com/download/win
+1. Atveriet:
+    https://git-scm.com/download/win
 2. Lejupielāde parasti sāksies automātiski
-3. Instalācijas laikā varat atstāt noklusējuma iestatījumus
-4. Pēc instalēšanas pārbaudiet:
+3. Uzstādīšanas laikā varat atstāt noklusējuma iestatījumus
+4. Pārbaudiet:
 
-```
+```powershell
 git --version
 ```
 
-## 🍎 macOS
+## macOS
 
-Vienkāršākais variants:
+Vienkāršākais variants ir Apple Command Line Tools:
 
-```
+```bash
 xcode-select --install
 ```
 
-Tas uzstādīs Apple Command Line Tools, kur parasti ietilpst arī `git`.
+Ja Git jau nav uzstādīts, dažkārt pietiek arī ar:
 
-Pārbaude:
-
-```
+```bash
 git --version
 ```
 
-Ja nepieciešams, Git var iegūt arī no: https://git-scm.com/download/mac
+un macOS pati piedāvās uzstādīšanu.
+
+Ja vajag jaunāku versiju, var izmantot arī:
+
+https://git-scm.com/download/mac
+
+Pārbaude:
+
+```bash
+git --version
+```
 
 ## Pamatojums
 
-Git ir versiju kontroles rīks, kas ļauj lejupielādēt projektus no GitHub, sekot līdzi izmaiņām un droši saglabāt koda versijas. Tas ir īpaši noderīgi, ja strādājat ar kursa materiāliem, koplietojamiem projektiem vai vēlaties izmantot GitHub Copilot un citus GitHub rīkus pilnvērtīgāk.
+Git ir nepieciešams, lai strādātu ar GitHub projektiem, kursa materiāliem un versiju kontroli.
 
 ---
 
-# 5. GitHub Copilot paplašinājums
+# 5. GitHub Copilot (neobligāti)
 
-Ja vēlaties izmantot AI palīdzību koda rakstīšanā, VS Code var instalēt:
+Ja vēlaties AI palīdzību koda rakstīšanā, VS Code var uzstādīt:
 
-- GitHub Copilot
-- GitHub Copilot Chat
+- `GitHub Copilot`
+- `GitHub Copilot Chat`
 
 ## Uzstādīšana
 
-1. Atveriet VS Code sadaļu Extensions
+1. Atveriet `Extensions`
 2. Atrodiet `GitHub Copilot`
 3. Nospiediet `Install`
 4. Pierakstieties ar savu GitHub kontu
 
-⚠️ GitHub Copilot lietošanai ir nepieciešams GitHub konts. Dažos gadījumos nepieciešams arī aktīvs GitHub Copilot plāns vai izmēģinājuma piekļuve.
-
-## Pamatojums
-
-GitHub Copilot var palīdzēt ātrāk rakstīt kodu, ģenerēt piemērus, skaidrot kļūdas un piedāvāt nākamos soļus darbā ar Python. Tas neaizstāj izpratni par kodu, bet var ievērojami paātrināt mācīšanos un ikdienas darbu.
+Piezīme:
+- nepieciešams GitHub konts
+- dažos gadījumos nepieciešama aktīva Copilot piekļuve vai izmēģinājuma plāns
 
 ---
 
 # 6. Projekta mapes izveide
 
-Izveidojiet mapi:
-```
+Izveidojiet projekta mapi, piemēram:
+
+```text
 python_excel_lesson
 ```
 
-Atveriet VS Code:
-File → Open Folder
+Pēc tam VS Code izvēlieties:
+
+```text
+File -> Open Folder
+```
+
+un atveriet tieši šo mapi.
 
 ## Pamatojums
 
-Atsevišķa projekta mape uztur visus failus vienuviet un palīdz izvairīties no jucekļa starp dažādiem darbiem. Atverot tieši šo mapi VS Code vidē, rīki var korekti piesaistīt virtuālo vidi, failus un projekta iestatījumus.
+Tas ļauj VS Code korekti piesaistīt failus, virtuālo vidi un projekta iestatījumus vienai darba vietai.
 
 ---
 
 # 7. Virtuālā vide (.venv)
 
-## 🪟 Windows
+Virtuālā vide ir ieteicamais darba modelis katram projektam atsevišķi.
 
-```
-python -m venv .venv
+## Windows
+
+Projekta mapē atveriet `Terminal` un palaidiet:
+
+```powershell
+py -m venv .venv
 ```
 
-Aktivizācija:
-```
+Aktivizācija PowerShell vidē:
+
+```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-Ja nestrādā:
-```
-.venv\Scripts\activate.bat
+Ja PowerShell bloķē skripta palaišanu, vienai sesijai atļaujiet izpildi:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 ```
 
----
+un pēc tam atkārtojiet aktivizāciju:
 
-## 🍎 macOS
-
+```powershell
+.\.venv\Scripts\Activate.ps1
 ```
+
+## macOS
+
+Projekta mapē atveriet `Terminal` un palaidiet:
+
+```bash
 python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-Aktivizācija:
-```
-source .venv/bin/activate
+## Kā saprast, ka vide ir aktivizēta
+
+Terminālī parasti parādās prefikss, piemēram:
+
+```text
+(.venv)
 ```
 
 ## Pamatojums
 
-Virtuālā vide izolē projekta bibliotēkas no citām datorā uzstādītajām pakotnēm. Tas novērš versiju konfliktus un nodrošina, ka projekts strādā paredzami gan šodien, gan vēlāk.
+Virtuālā vide izolē konkrētā projekta bibliotēkas no pārējās sistēmas. Tas samazina versiju konfliktus un padara projektu atkārtojamu.
 
 ---
 
 # 8. Interpreter izvēle VS Code
 
-Ctrl + Shift + P (Mac: Cmd + Shift + P)
+Kad `.venv` ir izveidota, VS Code jānorāda, ka tieši šo vidi vajag izmantot.
 
+## Variants A: caur Command Palette
+
+Atveriet:
+
+```text
+Ctrl + Shift + P
 ```
+
+vai macOS:
+
+```text
+Cmd + Shift + P
+```
+
+Pēc tam izvēlieties:
+
+```text
 Python: Select Interpreter
 ```
 
-Izvēlieties:
-```
-.venv
-```
+un atlasiet `.venv`.
+
+## Variants B: caur Status Bar
+
+Atveriet jebkuru `.py` failu un apakšējā joslā (`Status Bar`) izvēlieties aktīvo Python versiju. No saraksta atlasiet `.venv`.
+
+## Pēc interpreter izvēles
+
+Atverot jaunu termināli VS Code vidē, `.venv` parasti aktivizējas automātiski.
 
 ## Pamatojums
 
-Šis solis liek VS Code izmantot tieši projekta virtuālajā vidē esošo Python interpretatoru. Pretējā gadījumā redaktors var izmantot citu Python versiju, kurā nav vajadzīgo bibliotēku, un kods nedarbosies pareizi.
+Ja nav pareizi izvēlēts `interpreter`, VS Code var izmantot nepareizu Python vidi, un bibliotēkas šķitīs "pazudušas", lai gan tās patiesībā ir uzstādītas citur.
 
 ---
 
 # 9. Bibliotēku uzstādīšana
 
-## 🪟 Windows
-```
-python -m pip install pandas openpyxl jupyter matplotlib
+Pēc `.venv` aktivizācijas uzstādiet nepieciešamās bibliotēkas.
+
+Vispirms ieteicams atjaunināt `pip`:
+
+```bash
+python -m pip install --upgrade pip
 ```
 
-## 🍎 macOS
+Tad uzstādiet darba bibliotēkas:
+
+```bash
+python -m pip install pandas openpyxl matplotlib jupyter ipykernel
 ```
-python3 -m pip install pandas openpyxl jupyter matplotlib
-```
+
+## Kāpēc tieši šīs bibliotēkas
+
+- `pandas` datu apstrādei
+- `openpyxl` Excel `.xlsx` failiem
+- `matplotlib` diagrammām
+- `jupyter` notebook darbībai
+- `ipykernel` lokālam Python `kernel` notebook failiem
 
 ## Pamatojums
 
-Bibliotēkas ir nepieciešamas, lai veiktu praktiskos uzdevumus: `pandas` datu apstrādei, `openpyxl` Excel failiem, `jupyter` notebook videi un `matplotlib` vizualizācijām. Bez šī soļa Python būtu uzstādīts, bet tam trūktu rīku reālam darbam ar datiem.
+Ar Python vien nepietiek praktiskam darbam ar datiem. Šīs pakotnes veido pamata darba komplektu kursa uzdevumiem.
 
 ---
 
 # 10. Python tests
 
-Izveidojiet `test.py`:
+Izveidojiet failu `test.py` ar saturu:
 
-```
+```python
 print("Python darbojas!")
+
 import pandas
 import openpyxl
+
 print("Bibliotēkas darbojas!")
 ```
 
-## 🪟 Windows
-```
+Palaidiet:
+
+```bash
 python test.py
 ```
 
-## 🍎 macOS
-```
-python3 test.py
-```
+Ja `.venv` ir aktivizēta, šī pati komanda būs korekta gan Windows, gan macOS vidē.
 
 ## Pamatojums
 
-Tests pārbauda gan pašu Python darbību, gan to, vai bibliotēkas ir uzstādītas korekti un importējas bez kļūdām. Tas ļauj problēmas pamanīt uzreiz, pirms sākat strādāt ar lielākiem uzdevumiem.
+Šis tests vienlaikus pārbauda Python palaišanu un galveno bibliotēku importu.
 
 ---
 
-# 11. Notebook tests
+# 11. Jupyter notebook tests
 
-Izveidojiet `.ipynb` failu un palaidiet:
+1. VS Code vidē izveidojiet jaunu `.ipynb` failu
+2. Augšējā labajā stūrī izvēlieties `kernel`
+3. Atlasiet savu `.venv`
+4. Pirmajā šūnā palaidiet:
 
-```
+```python
 import pandas as pd
 print("Notebook darbojas")
 ```
 
-⚠️ Kernel jābūt `.venv`
+## Svarīgi
+
+Notebook failam `kernel` jāatbilst tai pašai `.venv`, kur uzstādījāt bibliotēkas.
+
+Ja VS Code rāda citu vidi, manuāli pārslēdziet `kernel` augšējā labajā stūrī.
 
 ## Pamatojums
 
-Šis solis pārbauda, vai Jupyter notebook vide darbojas kopā ar izvēlēto Python vidi. Pareizs kernel (kodols) ir svarīgs, jo citādi notebook var tikt palaista ar citu interpretatoru un neredzēt projektam uzstādītās bibliotēkas.
+`Interpreter` un `kernel` nav vienmēr viens un tas pats izvēles punkts. Python failam svarīgs ir `interpreter`, notebook failam svarīgs ir `kernel`.
 
 ---
 
 # 12. Excel tests
 
-```
+Notebook vai `.py` failā palaidiet:
+
+```python
 import pandas as pd
 
 df = pd.DataFrame({
-    "Department": ["IT", "HR", "Finance"],
-    "Amount": [1200, 800, 1500]
+     "Department": ["IT", "HR", "Finance"],
+     "Amount": [1200, 800, 1500]
 })
 
 df.to_excel("test.xlsx", index=False)
+print("Excel fails izveidots")
 ```
+
+Ja mapē parādās `test.xlsx`, tad `pandas` un `openpyxl` strādā korekti.
 
 ## Pamatojums
 
-Excel tests apstiprina, ka `pandas` un `openpyxl` spēj ne tikai ielādēties, bet arī izveidot reālu `.xlsx` failu. Tas ir būtiski, jo kursa uzdevumos galvenais mērķis ir automatizēt darbu ar Excel datiem.
+Šis ir praktisks tests, kas apstiprina, ka Excel eksports tiešām darbojas, nevis tikai bibliotēku imports.
 
 ---
 
 # 13. Biežākās problēmas
 
 ## Windows
-- python neatrod → izmantojiet `py`
-- PowerShell bloķē aktivizāciju → izmantojiet `.bat`
+
+### `python` vai `py` netiek atrasts
+
+Pārbaudiet:
+
+```powershell
+python --version
+py --version
+```
+
+Ja komandas nestrādā:
+- aizveriet un atveriet termināli no jauna
+- pārliecinieties, ka `Python Install Manager` ir uzstādīts
+- pārbaudiet `App execution aliases` Windows iestatījumos
+
+### PowerShell neļauj aktivizēt `.venv`
+
+Izmantojiet:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+```
+
+### `pip` komanda nestrādā
+
+Izmantojiet nevis `pip`, bet:
+
+```bash
+python -m pip
+```
+
+Tas ir drošākais variants visās vidēs.
 
 ## macOS
-- izmanto `python` nevis `python3`
-- nav aktivizēts `.venv`
 
-## Abiem
-- nepareizs interpreter
-- notebook kernel neatbilst `.venv`
+### Tiek izmantots nepareizs Python
 
-## Pamatojums
+Pārbaudiet:
 
-Biežāko problēmu saraksts palīdz ātri diagnosticēt tipiskās kļūdas, nepatērējot lieku laiku nejaušai risinājumu meklēšanai. Īpaši sākumā tas samazina risku iestrēgt vienkāršos konfigurācijas jautājumos.
+```bash
+which python3
+python3 --version
+```
+
+Ja izmantojat Python no `python.org`, rezultātam jāatbilst jaunajai instalācijai.
+
+### HTTPS vai sertifikātu problēmas
+
+Palaidiet:
+
+```text
+Install Certificates.command
+```
+
+no mapes `/Applications/Python 3.14/`.
+
+## Gan Windows, gan macOS
+
+### VS Code neredz `.venv`
+
+- palaidiet `Python: Select Interpreter`
+- ja nepieciešams, aizveriet un atveriet VS Code
+- atveriet jaunu termināli pēc interpreter izvēles
+
+### Notebook neredz bibliotēkas
+
+- pārbaudiet, vai notebook `kernel` ir `.venv`
+- ja vajag, pārslēdziet `kernel` augšējā labajā stūrī
+- pārliecinieties, ka `ipykernel` ir uzstādīts tieši `.venv`
+
+### Notebook nevar palaist kodu
+
+Pārbaudiet, vai darba mape ir `trusted workspace`. `Restricted Mode` var bloķēt notebook izpildi.
 
 ---
 
 # 14. Komandu kopsavilkums
 
 ## Windows
-```
-python -m venv .venv
+
+```powershell
+py --version
+py install 3.14
+py -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install pandas openpyxl jupyter matplotlib
+python -m pip install --upgrade pip
+python -m pip install pandas openpyxl matplotlib jupyter ipykernel
+python test.py
 ```
 
 ## macOS
-```
+
+```bash
+python3 --version
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install pandas openpyxl jupyter matplotlib
+python -m pip install --upgrade pip
+python -m pip install pandas openpyxl matplotlib jupyter ipykernel
+python test.py
 ```
 
-## Pamatojums
+---
 
-Komandu kopsavilkums kalpo kā īsa atgādne, kuru var izmantot atkārtoti arī nākamajos projektos. Tas paātrina darba sākšanu un samazina iespēju sajaukt darbību secību.
+# 15. Minimālais darba princips
+
+1. Atver projekta mapi VS Code vidē
+2. Izveido `.venv`
+3. Aktivizē `.venv`
+4. Izvēlas pareizo `interpreter`
+5. Uzstāda bibliotēkas
+6. Python failiem izmanto pareizo `interpreter`
+7. Notebook failiem izvēlas pareizo `kernel`
+8. Palaiž kodu un iegūst rezultātus
 
 ---
 
-# 15. Galvenā ideja
+# 16. Galvenā ideja
 
-Python:
-- automatizē Excel darbu
-- samazina kļūdas
-- ietaupa laiku
-
----
-
-# 16. Minimālais darba princips
-
-1. Atver projektu
-2. Aktivizē `.venv`
-3. Instalē bibliotēkas
-4. Palaiž kodu
-5. Iegūst Excel (vai citus) rezultātus
+Python šajā kursā tiek izmantots, lai:
+- automatizētu darbu ar datiem un Excel
+- samazinātu manuālas kļūdas
+- ietaupītu laiku
+- padarītu analīzi atkārtojamu
 
 
 
