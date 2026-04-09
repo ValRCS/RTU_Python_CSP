@@ -1,47 +1,47 @@
-"""Python pamati secigai izpildei.
+"""Python pamati secīgai izpildei.
 
-Saja faila apvienoti notebook piemeru kodi un isas piezimes.
-Ej cauri failam no augstas uz leju, palaid sadalas un papildini
-komentetos uzdevumus ar saviem piemeriem.
+Šajā failā apvienoti piezīmju grāmatas piemēru kodi un īsas piezīmes.
+Ej cauri failam no augšas uz leju, palaid sadaļas un papildini
+komentētos uzdevumus ar saviem piemēriem.
 """
 
 # 1. Pirmais Python kods
-print("Hello Python Pasaule")
+print("Sveika, Python pasaule!")
 
-# Pamegini pats:
+# Pamēģini pats:
 # print("Mani sauc ...")
-# print("Es stradaju ...")
+# print("Es strādāju ...")
 
 
-# 2. Mainigie un vienkarsi aprekini
+# 2. Mainīgie un vienkārši aprēķini
 x = 10
-print("x vertiba ir:", x)
+print("x vērtība ir:", x)
 print("x + 5 =", x + 5)
 
-# Pamegini pats:
+# Pamēģini pats:
 # y = 7
 # print("y =", y)
 # print("y + 2 =", y + 2)
 # print("y * 3 =", y * 3)
 
 
-# 3. Mainigie un vertibu parrakstisana
+# 3. Mainīgie un vērtību pārrakstīšana
 vards = "Anna"
 vecums = 32
-pilseta = "Riga"
+pilseta = "Rīga"
 
 print(vards)
 print(vecums)
 print(pilseta)
 
 skaits = 5
-print("Sakuma:", skaits)
+print("Sākumā:", skaits)
 
 skaits = 8
-print("Pec parrakstisanas:", skaits)
+print("Pēc pārrakstīšanas:", skaits)
 
-# Pamegini pats:
-# amats = "Analitikis"
+# Pamēģini pats:
+# amats = "Analītiķis"
 # darba_vieta = "RTU"
 # print(vards, amats, darba_vieta)
 
@@ -57,8 +57,8 @@ print(type(skaits))
 print(type(temperatura))
 print(type(ir_aktivs))
 
-# type() parada, kada tipa ir vertiba.
-# Pamegini pats:
+# type() parāda, kāda tipa ir vērtība.
+# Pamēģini pats:
 # mans_teksts = "Sveiki"
 # mans_skaitlis = 25
 # mans_decimals = 3.14
@@ -69,7 +69,7 @@ print(type(ir_aktivs))
 # print(type(mans_statuss))
 
 
-# 5. Parveidosana starp tipiem
+# 5. Pārveidošana starp tipiem
 skaitlis_teksta = "123"
 skaitlis = int(skaitlis_teksta)
 print(skaitlis)
@@ -80,7 +80,7 @@ teksts = str(vecums)
 print(teksts)
 print(type(teksts))
 
-# Pamegini pats:
+# Pamēģini pats:
 # teksts_ar_skaitli = "45"
 # print(int(teksts_ar_skaitli))
 # skaitlis_ar_komatu = 12.7
@@ -114,7 +114,7 @@ print(ir_pilngadigs and ir_registrets)
 print(ir_pilngadigs or ir_registrets)
 print(not ir_registrets)
 
-# Pamegini pats:
+# Pamēģini pats:
 # c = 8
 # d = 5
 # print(c + d)
@@ -123,60 +123,60 @@ print(not ir_registrets)
 
 
 # 7. Ievade ar input()
-# input() ir noderigs, bet to parasti grib palaist apzinati.
-# Atkomente zemak esoso funkcijas izsaukumu, kad gribi patestet ievadi.
+# input() ir noderīgs, bet to parasti grib palaist apzināti.
+# Atkomentē zemāk esošo funkcijas izsaukumu, kad gribi patestēt ievadi.
 def ievades_piemeri():
-    vards = input("Ievadiet savu vardu: ")
+    vards = input("Ievadiet savu vārdu: ")
     print("Sveiki,", vards)
 
-    gads = int(input("Ievadiet savu dzimsanas gadu: "))
-    print("Jusu ievaditais gads:", gads)
+    gads = int(input("Ievadiet savu dzimšanas gadu: "))
+    print("Jūsu ievadītais gads:", gads)
 
 
 # ievades_piemeri()
 
-# Pamegini pats:
-# lietotaja_vards = input("Ievadi savu vardu: ")
+# Pamēģini pats:
+# lietotaja_vards = input("Ievadi savu vārdu: ")
 # lietotaja_vecums = input("Ievadi savu vecumu: ")
 # print("Sveiki,", lietotaja_vards)
 # print("Tev ir", lietotaja_vecums, "gadi.")
 
 
-# 8. Teksta apstrades pamati
+# 8. Teksta apstrādes pamati
 teksts = "Python"
 print(teksts[0])
 print(teksts[1])
 print(len(teksts))
 
-teksts = "  Riga  "
+teksts = "  Rīga  "
 print(teksts)
 print(teksts.strip())
 print(teksts.lower())
 print(teksts.upper())
 
 vards = "Anna"
-uzvards = "Berzina"
+uzvards = "Bērziņa"
 pilns_vards = vards + " " + uzvards
 print(pilns_vards)
 
-# Noderigas darbibas ar tekstu:
+# Noderīgas darbības ar tekstu:
 # len(teksts), teksts.lower(), teksts.upper(), teksts.strip()
 #
-# Pamegini pats:
-# mans_teksts = "  Programmesana  "
+# Pamēģini pats:
+# mans_teksts = "  Programmēšana  "
 # print(mans_teksts)
 # print(mans_teksts.strip())
 # print(mans_teksts.lower())
 # print(mans_teksts.upper())
 
 
-# 9. Nosacijumi ar if, elif, else
+# 9. Nosacījumi ar if, elif, else
 vecums = 20
 
 if vecums >= 18:
-    print("Pilngadigs")
+    print("Pilngadīgs")
 else:
-    print("Nepilngadigs")
+    print("Nepilngadīgs")
 
 punkti = 85
 
@@ -185,18 +185,18 @@ if punkti >= 90:
 elif punkti >= 70:
     print("Labi")
 else:
-    print("Jauzlabo")
+    print("Jāuzlabo")
 
-# Svarigi:
-# aiz nosacijuma jaliek :
-# koda bloki jaatkapina ar atstarpem
+# Svarīgi:
+# aiz nosacījuma jāliek :
+# koda bloki jāatkāpina ar atstarpēm
 #
-# Pamegini pats:
+# Pamēģini pats:
 # skaitlis = 4
 # if skaitlis > 0:
-#     print("Pozitivs")
+#     print("Pozitīvs")
 # elif skaitlis < 0:
-#     print("Negativs")
+#     print("Negatīvs")
 # else:
 #     print("Nulle")
 
@@ -214,12 +214,12 @@ for burts in "Python":
 # range(5) dod 0, 1, 2, 3, 4
 # range(1, 6) dod 1, 2, 3, 4, 5
 #
-# Pamegini pats:
+# Pamēģini pats:
 # for skaitlis in range(1, 11):
 #     print(skaitlis)
 #
 # for skaitlis in range(2, 11, 2):
-#     print("Para skaitlis:", skaitlis)
+#     print("Pāra skaitlis:", skaitlis)
 
 
 # 11. Cikls while
@@ -229,10 +229,10 @@ while x <= 5:
     print(x)
     x += 1
 
-# Uzmanies no bezgaliga cikla:
-# ja aizmirsti mainit nosacijuma mainigo, cikls var nebeigties.
+# Uzmanies no bezgalīga cikla:
+# ja aizmirsti mainīt nosacījuma mainīgo, cikls var nebeigties.
 #
-# Pamegini pats:
+# Pamēģini pats:
 # y = 1
 # while y <= 7:
 #     print(y)
@@ -240,22 +240,22 @@ while x <= 5:
 
 
 # 12. Sarakstu pamati
-pilsetas = ["Riga", "Liepaja", "Daugavpils"]
+pilsetas = ["Rīga", "Liepāja", "Daugavpils"]
 print(pilsetas)
 print(pilsetas[0])
 print(pilsetas[1])
 print(len(pilsetas))
 
-pilsetas = ["Riga", "Liepaja"]
+pilsetas = ["Rīga", "Liepāja"]
 pilsetas.append("Jelgava")
 print(pilsetas)
 
 nodalas = ["IT", "HR", "Finanses"]
 for nodala in nodalas:
-    print("Nodala:", nodala)
+    print("Nodaļa:", nodala)
 
-# Pamegini pats:
-# mani_elementi = ["sarkans", "zils", "zals"]
+# Pamēģini pats:
+# mani_elementi = ["sarkans", "zils", "zaļš"]
 # print(mani_elementi)
 # print(mani_elementi[0])
 # mani_elementi.append("dzeltens")
@@ -275,7 +275,7 @@ def sasveicinaties_ar_vardu(vards):
 
 
 sasveicinaties_ar_vardu("Anna")
-sasveicinaties_ar_vardu("Janis")
+sasveicinaties_ar_vardu("Jānis")
 
 
 def saskaitit(a, b):
@@ -293,47 +293,47 @@ def kvadrats(x):
 print(kvadrats(4))
 print(kvadrats(9))
 
-# print() izvada rezultatu ekrana.
-# return atdod rezultatu talakai izmantosanai.
+# print() izvada rezultātu ekrānā.
+# return atdod rezultātu tālākai izmantošanai.
 #
-# Pamegini pats:
+# Pamēģini pats:
 # def dubultot(skaitlis):
 #     return skaitlis * 2
 #
 # print(dubultot(6))
 
 
-# 14. Tipiskas kludas
-# Sie piemeri ir atstati komentaros, lai fails paliktu izpildams.
+# 14. Tipiskās kļūdas
+# Šie piemēri ir atstāti komentāros, lai fails paliktu izpildāms.
 
-# Kluda 1: pietrukst pedinu
+# Kļūda 1: pietrūkst pēdiņu
 # print(Hello)
 
-# Kluda 2: pietrukst kola
+# Kļūda 2: pietrūkst kola
 # if 5 > 2
 #     print("pareizi")
 
-# Kluda 3: nezinams mainigais
+# Kļūda 3: nezināms mainīgais
 # print(nezinams_mainigais)
 
 
 # 15. Mini praktiskais darbs
 # Izveido savu mazo programmu:
-# 1. prasi lietotajam ievadit vardu
-# 2. prasi ievadit vecumu
-# 3. izdruka isu zinjojumu
+# 1. prasi lietotājam ievadīt vārdu
+# 2. prasi ievadīt vecumu
+# 3. izdrukā īsu ziņojumu
 #
-# Piemera karkass:
-# vards = input("Ievadi vardu: ")
+# Piemēra karkass:
+# vards = input("Ievadi vārdu: ")
 # vecums = int(input("Ievadi vecumu: "))
 # if vecums >= 18:
-#     print(vards, "ir pilngadigs")
+#     print(vards, "ir pilngadīgs")
 # else:
-#     print(vards, "nav pilngadigs")
+#     print(vards, "nav pilngadīgs")
 
 
-# 16. Papildu uzdevumi atrakajiem studentiem
-# Pamegini izveidot:
-# - funkciju, kas aprekina taisnstura laukumu
-# - ciklu, kas izdrukaa tikai nepara skaitlus
-# - sarakstu ar 5 vertibam un parbaudi, vai taja ir konkrets elements
+# 16. Papildu uzdevumi ātrākajiem studentiem
+# Pamēģini izveidot:
+# - funkciju, kas aprēķina taisnstūra laukumu
+# - ciklu, kas izdrukā tikai nepāra skaitļus
+# - sarakstu ar 5 vērtībām un pārbaudi, vai tajā ir konkrēts elements
