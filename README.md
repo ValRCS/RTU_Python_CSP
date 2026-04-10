@@ -6,7 +6,7 @@ Python datu apstrādes kurss pieaugušiem profesionāļiem ar pieredzi statistik
 
 ## Mērķauditorija
 
-Kurss paredzēts strādājošiem profesionāļiem statistikas nozarē ar dažāda līmeņa Python priekšzināšanām.
+Kurss paredzēts strādājošiem profesionāļiem statistikas nozarē ar dažāda līmeņa Python priekšzināšanām. Pārsvara dalībniekiem ir pamata zināšanas.
 
 ## Kursa struktūra
 
