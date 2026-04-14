@@ -1,0 +1,15 @@
+Python ir ļoti noderīgs statistikā!
+  Man patīk datu tīrīšana ar Python.  
+
+Excel joprojām ir vajadzīgs, bet Python palīdz automatizēt darbu.
+PYTHON, python, PyThOn visur.
+Dažreiz datos ir tukšas rindas...   
+Mēs bieži eksportējam CSV failus no SPSS un Excel!
+Kļūdas failos parādās bieži: nepareizs kodējums, tukšas kolonnas, 123.
+Es gribu ātri saskaitīt vārdu biežumus un saglabāt rezultātu.
+python man palīdz atkārtot analīzi bez manuālas kopēšanas.
+  
+Dažiem kolēģiem vēl patīk Excel, bet reproducējamība ir svarīga.
+E-pasts un ID lauki dažreiz ir jātīra atsevišķi.
+Python ir ļoti noderīgs statistikā!
+Mums ir arī atbildes ar MIXED Case un liekām    atstarpēm.
