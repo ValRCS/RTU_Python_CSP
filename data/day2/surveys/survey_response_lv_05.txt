@@ -1,0 +1,44 @@
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Rihards Bērziņš.
+
+2. Kādā vecuma grupā jūs esat?
+Man ir 41 gads, un es strādāju informācijas tehnoloģiju jomā Rīgā jau ilgu laiku.
+
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Vīrietis.
+
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+Turpmākai aptaujai varētu izmantot e-pasta adresi rihards.berzins41@example.com un tālruņa numuru +371 55550105.
+
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Es strādāju pilnu slodzi par programmatūras izstrādātāju starptautiskā uzņēmumā, un šajā profesijā esmu 17 gadus.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Man ir bakalaura grāds datorzinātnēs, un lielu daļu profesionālo prasmju esmu attīstījis darba gaitā.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es dzīvoju kopā ar sievu un diviem skolas vecuma bērniem, un mūsu mājsaimniecībā svarīga ir gan ikdienas stabilitāte, gan uzkrājumi.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir aptuveni 2800 eiro, kas ļauj dzīvot samērā ērti, lai gan izmaksu pieaugums joprojām ir jūtams.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Mūs visvairāk ietekmē mājokļa kredīts, bērnu izglītības izdevumi un pārtikas cenu pieaugums.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Ar automašīnu parasti nobraucu apmēram 80 kilometrus nedēļā, galvenokārt ģimenes vajadzībām.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Ar velosipēdu nobraucu apmēram 20 kilometrus nedēļā, jo dažreiz braucu uz biroju un nedēļas nogalēs sportoju.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Inflācija nav radījusi krīzi, bet mēs tomēr rūpīgāk sekojam budžetam un atliekam dažus lielākus pirkumus.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Par darbu jūtos pietiekami droši, bet finanšu drošība ir atkarīga no tā, cik labi izdodas saglabāt uzkrājumus.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Rīgā kvalificētiem speciālistiem iespējas ir labas, taču vispārējais cenu līmenis samazina sajūtu par labklājības pieaugumu.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Zemākas mājokļa izmaksas un stabilāka nodokļu politika palīdzētu labāk plānot ģimenes nākotni.

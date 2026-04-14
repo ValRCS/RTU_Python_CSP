@@ -1,35 +1,44 @@
-1. Kādā vecuma grupā jūs esat?
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Jānis Berzins.
+
+2. Kādā vecuma grupā jūs esat?
 Man ir 45 gadi, un es lielāko daļu savas pieaugušā dzīves esmu dzīvojis un strādājis Rīgā.
 
-2. Kāda ir jūsu pašreizējā nodarbinātības situācija?
-Es strādāju pilnu slodzi kā projektu vadītājs privātā uzņēmumā, un jau 12 gadus man ir stabils profesionāls amats.
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Vīrietis.
 
-3. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
-Man ir maģistra grāds ekonomikā Latvijas universitātē, un tas man palīdzēja izveidot karjeru ar biznesu un finansēm saistītā darbā.
-
-4. Kā jūs raksturotu savu mājsaimniecību?
-Es dzīvoju Rīgā kopā ar dzīvesbiedru un vienu pusaudzi, un mēs cenšamies līdzsvarot ikdienas izdevumus ar uzkrājumiem izglītībai un mājokļa uzlabojumiem.
-
-5. Kā jūs raksturotu savu ienākumu līmeni?
-Mani mēneša neto ienākumi ir aptuveni no 2400 līdz 2800 eiro, kas ir virs pilsētas vidējā līmeņa, taču tie joprojām izjūt spiedienu, jo mājokļa, pārtikas, transporta un komunālo pakalpojumu izmaksas ir kļuvušas augstākas.
-
-6. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
-Lielākais spiediens ir hipotekārā kredīta maksājumi, pārtikas cenas, apkures izmaksas ziemā un kopējais pakalpojumu cenu pieaugums visā pilsētā.
-
-7. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
-Inflācija ir padarījusi mūs piesardzīgākus ar tēriņiem. Mēs biežāk salīdzinām cenas, atliekam dažus lielākus pirkumus un nopietnāk domājam par mēneša budžetu.
-
-8. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
-Es jūtos diezgan droši par savu darbu, jo mana nozare joprojām ir pieprasīta, taču par ilgtermiņa finansiālo stabilitāti esmu mazāk pārliecināts nekā pirms dažiem gadiem.
-
-9. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
-Rīga joprojām piedāvā labas iespējas kvalificētiem speciālistiem, taču daudzas mājsaimniecības izjūt slodzi, īpaši tad, ja algas netiek līdzi dzīves dārdzībai.
-
-10. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
-Mazākas ar mājokli saistītās izmaksas, prognozējamākas enerģijas cenas un nodokļu vide, kas strādājošām ģimenēm atstāj lielākus neto ienākumus, dotu vislielāko uzlabojumu.
-
-11. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
 Turpmākai aptaujai varētu izmantot e-pasta adresi janis.berzins45@example.com un tālruņa numuru +371 55550100.
 
-12. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
-Jānis Berzins.
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Es strādāju pilnu slodzi kā projektu vadītājs privātā uzņēmumā, un jau 12 gadus man ir stabils profesionāls amats.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Man ir maģistra grāds ekonomikā Latvijas universitātē, un tas man palīdzēja izveidot karjeru ar biznesu un finansēm saistītā darbā.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es dzīvoju Rīgā kopā ar dzīvesbiedru un vienu pusaudzi, un mēs cenšamies līdzsvarot ikdienas izdevumus ar uzkrājumiem izglītībai un mājokļa uzlabojumiem.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir aptuveni no 2400 līdz 2800 eiro, kas ir virs pilsētas vidējā līmeņa, taču tie joprojām izjūt spiedienu, jo mājokļa, pārtikas, transporta un komunālo pakalpojumu izmaksas ir kļuvušas augstākas.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Lielākais spiediens ir hipotekārā kredīta maksājumi, pārtikas cenas, apkures izmaksas ziemā un kopējais pakalpojumu cenu pieaugums visā pilsētā.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Es parasti nobraucu apmēram 120 kilometrus nedēļā, galvenokārt dodoties uz darbu, kārtojot ģimenes lietas un reizēm braucot ārpus pilsētas centra.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Siltākajos mēnešos es parasti nobraucu apmēram 18 kilometrus nedēļā, galvenokārt īsiem braucieniem Rīgā un brīvdienu fiziskajām aktivitātēm.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Inflācija ir padarījusi mūs piesardzīgākus ar tēriņiem. Mēs biežāk salīdzinām cenas, atliekam dažus lielākus pirkumus un nopietnāk domājam par mēneša budžetu.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Es jūtos diezgan droši par savu darbu, jo mana nozare joprojām ir pieprasīta, taču par ilgtermiņa finansiālo stabilitāti esmu mazāk pārliecināts nekā pirms dažiem gadiem.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Rīga joprojām piedāvā labas iespējas kvalificētiem speciālistiem, taču daudzas mājsaimniecības izjūt slodzi, īpaši tad, ja algas netiek līdzi dzīves dārdzībai.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Mazākas ar mājokli saistītās izmaksas, prognozējamākas enerģijas cenas un nodokļu vide, kas strādājošām ģimenēm atstāj lielākus neto ienākumus, dotu vislielāko uzlabojumu.

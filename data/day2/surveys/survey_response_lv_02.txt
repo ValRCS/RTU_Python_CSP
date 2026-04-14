@@ -1,0 +1,44 @@
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Anna Liepa.
+
+2. Kādā vecuma grupā jūs esat?
+Man ir 22 gadi, un es dzīvoju Rīgā studiju un darba dēļ.
+
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Sieviete.
+
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+Turpmākai aptaujai varētu izmantot e-pasta adresi anna.liepa22@example.com un tālruņa numuru +371 55550102.
+
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Es studēju un paralēli strādāju nepilnu slodzi kafejnīcā par baristu, šo darbu darot jau 2 gadus.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Esmu ieguvusi vidējo izglītību un pašlaik studēju bakalaura programmā komunikācijas jomā.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es īrēju dzīvokli kopā ar draudzeni Teikā, un mēs sadalām īri, pārtikas un komunālos maksājumus.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir apmēram 950 eiro, un ar tiem pietiek pamatvajadzībām, bet uzkrāt ir grūti.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Lielākais spiediens ir īres maksa, pārtikas cenas un mācību materiālu izmaksas.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Ar automašīnu es nebraucu, tāpēc nedēļas laikā tie ir 0 kilometri.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Es ar velosipēdu nobraucu apmēram 12 kilometrus nedēļā, galvenokārt braucot uz darbu un atpakaļ siltākā laikā.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Esmu sākusi biežāk gatavot mājās un daudz rūpīgāk plānot pirkumus, jo cenas pieaug gandrīz visam.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Par darbu jūtos pietiekami droši, bet finanšu ziņā esmu ievainojama, jo mani ienākumi nav lieli.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Rīgā ir iespējas jauniem cilvēkiem, bet dzīves dārdzība aug ātrāk nekā daudzi studentu un jauniešu ienākumi.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Pieejamāka īre, lētāks sabiedriskais transports un augstāka samaksa nepilnas slodzes darbā man ļoti palīdzētu.

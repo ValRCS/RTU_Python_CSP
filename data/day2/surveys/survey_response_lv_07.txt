@@ -1,0 +1,44 @@
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Maija Egle.
+
+2. Kādā vecuma grupā jūs esat?
+Man ir 52 gadi, un es Rīgā dzīvoju jau vairāk nekā trīsdesmit gadus.
+
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Sieviete.
+
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+Turpmākai aptaujai varētu izmantot e-pasta adresi maija.egle52@example.com un tālruņa numuru +371 55550107.
+
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Es strādāju pilnu slodzi par skolas direktori, un izglītības jomā esmu nostrādājusi 29 gadus.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Man ir maģistra grāds pedagoģijā un izglītības vadībā.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es dzīvoju kopā ar vīru, un viens no bērniem vēl studiju laikā daļēji paļaujas uz mūsu atbalstu.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir aptuveni 2600 eiro, kas dod zināmu stabilitāti, bet arī atbildība un izdevumi ir ievērojami.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Studējoša bērna atbalsts, pārtikas cenas, komunālie maksājumi un mājokļa uzturēšana rada lielāko spiedienu.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Ar automašīnu nobraucu apmēram 140 kilometrus nedēļā, jo bieži pārvietojos starp darbu, mājām un citiem pienākumiem.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Ar velosipēdu nobraucu apmēram 5 kilometrus nedēļā, pārsvarā atpūtas nolūkos.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Inflācija liek uzmanīgāk vērtēt visus tēriņus, pat ja ienākumi ir salīdzinoši labi.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Par darbu jūtos droši, bet ilgtermiņā finanšu plānošana kļūst aizvien nozīmīgāka.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Rīgā ir iespējas profesionāļiem, tomēr cenu pieaugums rada spriedzi arī vidēji labi nodrošinātām mājsaimniecībām.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Mazāks nodokļu slogs, pieejamāki komunālie pakalpojumi un stabilāka ekonomiskā vide būtu visnoderīgākie uzlabojumi.

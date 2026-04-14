@@ -1,0 +1,44 @@
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Edgars Kalniņš.
+
+2. Kādā vecuma grupā jūs esat?
+Man ir 29 gadi, un es jau vairākus gadus strādāju praktiskā tehniskā profesijā Rīgā.
+
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Vīrietis.
+
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+Turpmākai aptaujai varētu izmantot e-pasta adresi edgars.kalnins29@example.com un tālruņa numuru +371 55550103.
+
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Es strādāju pilnu slodzi par elektriķi būvniecības uzņēmumā un šajā profesijā esmu jau 8 gadus.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Esmu ieguvis profesionālo vidējo izglītību elektrotehnikā un regulāri papildinu prasmes kursos.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es dzīvoju kopā ar partneri un mazu bērnu Ziepniekkalnā, tāpēc mūsu budžets ir jāplāno ļoti rūpīgi.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir apmēram 1600 eiro, kas ļauj nosegt ikdienas izdevumus, bet lieliem pirkumiem jākrāj ilgāk.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Mūs visvairāk noslogo bērna aprūpes izdevumi, īre, auto uzturēšana un pārtikas cenas.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Ar automašīnu es parasti nobraucu apmēram 220 kilometrus nedēļā, jo bieži jābrauc uz dažādiem objektiem.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Ar velosipēdu parasti nebraucu, tāpēc tie ir 0 kilometri nedēļā.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Inflācija nozīmē, ka vairāk domājam par izdevumu prioritātēm un retāk atļaujamies spontānus pirkumus.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Par darbu jūtos droši, jo pieprasījums pēc šādas profesijas ir stabils, bet finansiāli joprojām jāseko līdzi katram lielākam tēriņam.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Rīgā var labi nopelnīt ar labu profesiju, bet ģimenēm ar bērniem izmaksu pieaugums jūtams ļoti skaidri.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Lētāka bērnu aprūpe, zemākas degvielas izmaksas un pieejamāks mājoklis būtiski uzlabotu mūsu situāciju.

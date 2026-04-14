@@ -1,0 +1,44 @@
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Valda Siliņa.
+
+2. Kādā vecuma grupā jūs esat?
+Man ir 67 gadi, un es visu mūžu esmu dzīvojusi Rīgā.
+
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Sieviete.
+
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+Turpmākai aptaujai varētu izmantot e-pasta adresi valda.silina67@example.com un tālruņa numuru +371 55550109.
+
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Esmu pensionāre, bet reizēm piepelnu ar nelieliem šūšanas darbiem mājās, ko daru jau vairākus gadus.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Esmu ieguvusi profesionālo vidējo izglītību vieglās rūpniecības specialitātē.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es dzīvoju viena nelielā dzīvoklī Āgenskalnā, un man svarīgi ir ļoti uzmanīgi plānot visus maksājumus.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir aptuveni 980 eiro kopā ar pensiju un nelieliem papildu ienākumiem, tāpēc budžets ir ierobežots.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Visvairāk mani ietekmē pārtikas cenas, medikamentu izmaksas un komunālie maksājumi.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Ar automašīnu es nebraucu, tāpēc nedēļas laikā tie ir 0 kilometri.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Ar velosipēdu arī nebraucu, tāpēc tie ir 0 kilometri nedēļā.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Inflācija ir ļoti jūtama, jo tagad daudz rūpīgāk izvēlos pārtiku un biežāk atliekus nelielus pirkumus.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Finansiāli droši nejūtos pilnībā, jo jebkurš neparedzēts veselības izdevums var būt smags slogs.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Man šķiet, ka pensionāriem Rīgā kļūst arvien grūtāk, jo cenas aug ātrāk nekā ienākumi.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Lielāka pensija, lētāki medikamenti un mazāki komunālie maksājumi man palīdzētu visvairāk.

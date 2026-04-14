@@ -1,0 +1,44 @@
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Pēteris Jansons.
+
+2. Kādā vecuma grupā jūs esat?
+Man ir 74 gadi, un es esmu pensionēts inženieris, kurš joprojām aktīvi seko līdzi notikumiem Rīgā.
+
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Vīrietis.
+
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+Turpmākai aptaujai varētu izmantot e-pasta adresi peteris.jansons74@example.com un tālruņa numuru +371 55550110.
+
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Esmu pensionārs, iepriekš strādāju par inženieri ražošanas nozarē vairāk nekā 40 gadus.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Man ir augstākā izglītība inženierzinātnēs, ko ieguvu vēl pirms daudziem gadiem.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es dzīvoju kopā ar sievu dzīvoklī Imantā, un mūsu ikdiena ir samērā mierīga, bet izdevumi tiek stingri kontrolēti.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir aptuveni 800 eiro no pensijas, tāpēc dzīvojam taupīgi un bez lielām rezervēm.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Visvairāk jūtamas ir pārtikas cenas, zāļu izmaksas un apkures rēķini ziemā.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Ar automašīnu parasti nobraucu apmēram 10 kilometrus nedēļā, galvenokārt nepieciešamos īsos braucienos.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Ar velosipēdu vairs nebraucu, tāpēc tie ir 0 kilometri nedēļā.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Inflācija mūs ir piespiedusi būt vēl taupīgākiem, īpaši domājot par pārtiku un veselības izdevumiem.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Par darbu vairs nedomāju, bet finansiālā drošība nav liela, jo ienākumi ir fiksēti un izmaksas aug.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Rīgā dzīve ir kļuvusi dārga, un senioriem tas ir īpaši jūtams ikdienas pirkumos.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Augstāka pensija, pieejamāka veselības aprūpe un zemāki komunālie maksājumi būtu lielākais atbalsts.

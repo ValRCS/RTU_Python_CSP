@@ -1,0 +1,44 @@
+1. Kāds ir jūsu vārds? Šis lauks respondentiem bija neobligāts.
+Līga Krūmiņa.
+
+2. Kādā vecuma grupā jūs esat?
+Man ir 34 gadi, un es Rīgā dzīvoju jau kopš studiju laikiem.
+
+3. Kāds ir jūsu dzimums? Šis lauks respondentiem bija neobligāts.
+Sieviete.
+
+4. Kādus kontaktatus varētu izmantot turpmākai aptaujai?
+Turpmākai aptaujai varētu izmantot e-pasta adresi liga.krumina34@example.com un tālruņa numuru +371 55550104.
+
+5. Kāda ir jūsu pašreizējā nodarbinātības situācija?
+Es strādāju pilnu slodzi par medicīnas māsu slimnīcā, un veselības aprūpē esmu jau 11 gadus.
+
+6. Kāds ir augstākais izglītības līmenis, ko esat ieguvis?
+Man ir pirmā līmeņa augstākā izglītība veselības aprūpē un profesionālā kvalifikācija medicīnā.
+
+7. Kā jūs raksturotu savu mājsaimniecību?
+Es dzīvoju kopā ar dzīvesbiedru un diviem bērniem, tāpēc mūsu mājsaimniecībā ir daudz ikdienas izdevumu.
+
+8. Kā jūs raksturotu savu ienākumu līmeni?
+Mani mēneša neto ienākumi ir apmēram 1500 eiro, un, lai gan tie ir stabili, ģimenes budžets bieži ir saspringts.
+
+9. Kādi pašlaik ir lielākie ekonomiskie spiedieni uz jūsu mājsaimniecību?
+Bērnu izdevumi, pārtika, komunālie maksājumi un veselības saistītie pirkumi rada vislielāko spiedienu.
+
+10. Cik daudz jūs parasti braucat ar automašīnu nedēļas laikā?
+Ar automašīnu parasti nobraucu apmēram 35 kilometrus nedēļā, galvenokārt vedot bērnus un kārtojot ikdienas lietas.
+
+11. Cik daudz jūs parasti braucat ar velosipēdu nedēļas laikā?
+Ar velosipēdu nobraucu apmēram 6 kilometrus nedēļā, jo dažreiz tas ir ērtāk īsiem braucieniem pa apkaimi.
+
+12. Kā inflācija ir ietekmējusi jūsu ikdienas dzīvi?
+Mēs vairāk sekojam akcijām un retāk tērējam naudu atpūtai, jo pamatizdevumi ir kļuvuši augstāki.
+
+13. Cik droši jūs jūtaties attiecībā uz savu darbu un finansēm?
+Par darbu jūtos droši, bet finanšu ziņā liela pārliecība nav, jo ģimenes izdevumi ir augsti.
+
+14. Kāds ir jūsu viedoklis par ekonomisko situāciju Rīgā pašlaik?
+Rīgā ir darba iespējas, taču daudzām ģimenēm ar bērniem ikdienas dzīve kļūst dārgāka un saspringtāka.
+
+15. Kādas pārmaiņas visvairāk uzlabotu jūsu ekonomisko situāciju?
+Pieejamāki bērnu pulciņi, zemākas komunālās izmaksas un lielāks atbalsts ģimenēm būtu visnoderīgākais.
