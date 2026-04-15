@@ -39,6 +39,7 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 ## Mērķi
 - Nolasīt un attīrīt neapstrādātus datus
 - Apstrādāt nekārtīgus ievades formātus
+- Apskatīt funkcijas un lambda izteikumus
 
 ## Tēmas
 - Failu nolasīšana (txt, csv)
