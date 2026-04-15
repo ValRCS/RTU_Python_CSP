@@ -58,17 +58,19 @@ Python as a data processing, automation, and reproducibility tool for statistica
 # Day 3 — Pandas Fundamentals
 
 ## Objectives
+- Read simple JSON using the Python standard library
 - Work with tabular data
 - Replace Excel workflows
 - Read simple JSON data into analysis-ready tables
 
 ## Topics
+- Basic JSON reading with Python's standard library
+- Converting simple JSON into tabular form
 - DataFrame structure
 - Filtering and selection
 - Grouping and aggregation
 - Sorting
 - Merging datasets
-- Basic JSON reading and conversion to DataFrame
 
 ## Exercises
 - Recreate Excel operations in Pandas

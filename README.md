@@ -20,7 +20,7 @@ Uzmanība tiek veltīta neapstrādātu datu nolasīšanai, virkņu apstrādei, k
 
 ### 3. diena — Pandas pamati
 
-Dalībnieki apgūst darbu ar tabulveida datiem, `DataFrame` struktūru, filtrēšanu, atlasi, grupēšanu, agregāciju, kārtošanu un datu kopu apvienošanu, kā arī pamata darbu ar `JSON`, pakāpeniski aizstājot tipiskas Excel darbības ar Pandas pieeju.
+Dalībnieki sāk ar pamata darbu ar `JSON`, izmantojot Python standarta bibliotēku, un pēc tam pāriet uz tabulveida datiem, `DataFrame` struktūru, filtrēšanu, atlasi, grupēšanu, agregāciju, kārtošanu un datu kopu apvienošanu, pakāpeniski aizstājot tipiskas Excel darbības ar Pandas pieeju.
 
 ### 4. diena — Datu avoti un vizualizācija
 

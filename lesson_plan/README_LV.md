@@ -60,17 +60,19 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 # 3. diena — Pandas pamati
 
 ## Mērķi
+- Nolasīt vienkāršu JSON ar Python standarta bibliotēku
 - Strādāt ar tabulveida datiem
 - Aizstāt Excel darba plūsmas
 - Nolasīt vienkāršus JSON datus un pārvērst tos analīzei gatavā tabulā
 
 ## Tēmas
+- Pamata JSON nolasīšana ar Python standarta bibliotēku
+- Vienkārša JSON pārveidošana tabulveida formā
 - DataFrame struktūra
 - Filtrēšana un atlase
 - Grupēšana un agregācija
 - Kārtošana
 - Datu kopu apvienošana
-- Pamata JSON nolasīšana un pārveidošana par DataFrame
 
 ## Uzdevumi
 - Atveidot Excel darbības Pandas vidē
