@@ -60,6 +60,7 @@ Python as a data processing, automation, and reproducibility tool for statistica
 ## Objectives
 - Work with tabular data
 - Replace Excel workflows
+- Read simple JSON data into analysis-ready tables
 
 ## Topics
 - DataFrame structure
@@ -67,11 +68,13 @@ Python as a data processing, automation, and reproducibility tool for statistica
 - Grouping and aggregation
 - Sorting
 - Merging datasets
+- Basic JSON reading and conversion to DataFrame
 
 ## Exercises
 - Recreate Excel operations in Pandas
 - Group and summarize data
 - Join datasets
+- Convert simple JSON into a DataFrame
 
 ---
 
@@ -82,7 +85,7 @@ Python as a data processing, automation, and reproducibility tool for statistica
 - Create visual outputs
 
 ## Topics
-- Reading Excel, CSV, JSON
+- Reading Excel and integrating multiple data sources
 - SQL integration (basic)
 - Advanced Pandas (apply, datetime)
 - Visualization (matplotlib)

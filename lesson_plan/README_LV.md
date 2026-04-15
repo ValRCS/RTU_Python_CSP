@@ -62,6 +62,7 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 ## Mērķi
 - Strādāt ar tabulveida datiem
 - Aizstāt Excel darba plūsmas
+- Nolasīt vienkāršus JSON datus un pārvērst tos analīzei gatavā tabulā
 
 ## Tēmas
 - DataFrame struktūra
@@ -69,11 +70,13 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 - Grupēšana un agregācija
 - Kārtošana
 - Datu kopu apvienošana
+- Pamata JSON nolasīšana un pārveidošana par DataFrame
 
 ## Uzdevumi
 - Atveidot Excel darbības Pandas vidē
 - Grupēt un apkopot datus
 - Savienot datu kopas
+- Pārveidot vienkāršu JSON par DataFrame
 
 ---
 
@@ -84,7 +87,7 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 - Izveidot vizuālus rezultātus
 
 ## Tēmas
-- Excel, CSV, JSON nolasīšana
+- Excel failu nolasīšana un vairāku datu avotu integrācija
 - SQL integrācija (pamati)
 - Paplašināts Pandas (apply, datetime)
 - Vizualizācija (matplotlib)
