@@ -1,0 +1,13 @@
+sale_id,date,product_id,store,units_sold,discount_pct
+S1001,2026-01-03,P001,Riga-Center,14,0
+S1002,2026-01-04,P002,Riga-Center,30,5
+S1003,2026-01-05,P005,Riga-East,12,10
+S1004,2026-01-07,P006,Jelgava,9,
+S1005,2026-01-08,P003,Riga-Center,4,15
+S1006,2026-01-10,P004,Riga-East,11,0
+S1007,2026-01-12,P007,Jelgava,16,0
+S1008,2026-01-14,P008,Riga-Center,7,5
+S1009,2026-01-16,P010,Riga-East,10,0
+S1010,2026-01-18,P009,Jelgava,5,20
+S1011,2026-01-22,P001,Riga-East,8,0
+S1012,2026-01-25,P005,Jelgava,6,5

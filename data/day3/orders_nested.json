@@ -1,0 +1,145 @@
+{
+  "report_name": "spring_store_orders",
+  "generated_at": "2026-04-15T09:30:00+03:00",
+  "currency": "EUR",
+  "orders": [
+    {
+      "order_id": 1001,
+      "customer": {
+        "customer_id": "C001",
+        "name": "Anna Ozola",
+        "city": "Riga",
+        "loyalty_tier": "gold"
+      },
+      "items": [
+        {
+          "product_id": "P001",
+          "quantity": 3,
+          "unit_price": 2.49
+        },
+        {
+          "product_id": "P005",
+          "quantity": 1,
+          "unit_price": 6.99
+        }
+      ],
+      "payment": {
+        "method": "card",
+        "status": "paid"
+      },
+      "delivery": {
+        "type": "parcel",
+        "cost": 2.5
+      }
+    },
+    {
+      "order_id": 1002,
+      "customer": {
+        "customer_id": "C002",
+        "name": "Janis Berzins",
+        "city": "Jelgava",
+        "loyalty_tier": "silver"
+      },
+      "items": [
+        {
+          "product_id": "P006",
+          "quantity": 2,
+          "unit_price": 4.75
+        },
+        {
+          "product_id": "P010",
+          "quantity": 1,
+          "unit_price": 6.4,
+          "gift_wrap": true
+        }
+      ],
+      "payment": {
+        "method": "bank_transfer",
+        "status": "paid"
+      },
+      "delivery": {
+        "type": "pickup"
+      }
+    },
+    {
+      "order_id": 1003,
+      "customer": {
+        "customer_id": "C003",
+        "name": "Elina Freimane",
+        "city": "Liepaja"
+      },
+      "items": [
+        {
+          "product_id": "P008",
+          "quantity": 1,
+          "unit_price": 14.9
+        },
+        {
+          "product_id": "P004",
+          "quantity": 2,
+          "unit_price": 7.2
+        }
+      ],
+      "payment": {
+        "method": "card",
+        "status": "refunded"
+      },
+      "delivery": {
+        "type": "courier",
+        "cost": 4.0
+      },
+      "coupon_code": "SPRING10"
+    },
+    {
+      "order_id": 1004,
+      "customer": {
+        "customer_id": "C004",
+        "name": "Roberts Kalnins",
+        "city": "Riga",
+        "loyalty_tier": "bronze"
+      },
+      "items": [
+        {
+          "product_id": "P002",
+          "quantity": 10,
+          "unit_price": 0.89
+        },
+        {
+          "product_id": "P007",
+          "quantity": 4,
+          "unit_price": 3.1
+        },
+        {
+          "product_id": "P001",
+          "quantity": 2,
+          "unit_price": 2.49
+        }
+      ],
+      "payment": {
+        "method": "invoice",
+        "status": "pending"
+      },
+      "delivery": {
+        "type": "parcel",
+        "cost": 3.2
+      }
+    },
+    {
+      "order_id": 1005,
+      "customer": {
+        "customer_id": "C005",
+        "name": "Marta Liepa",
+        "city": "Ogre",
+        "loyalty_tier": "gold"
+      },
+      "items": [],
+      "payment": {
+        "method": "card",
+        "status": "cancelled"
+      },
+      "delivery": {
+        "type": "pickup"
+      }
+    }
+  ]
+}

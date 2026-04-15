@@ -1,0 +1,82 @@
+[
+  {
+    "product_id": "P001",
+    "name": "Notebook A5",
+    "category": "Office",
+    "price": 2.49,
+    "in_stock": true,
+    "supplier": "Baltic Paper"
+  },
+  {
+    "product_id": "P002",
+    "name": "Ballpoint Pen Blue",
+    "category": "Office",
+    "price": 0.89,
+    "in_stock": true,
+    "supplier": "Riga Supplies"
+  },
+  {
+    "product_id": "P003",
+    "name": "Desk Lamp Mini",
+    "category": "Electronics",
+    "price": 18.5,
+    "in_stock": false,
+    "supplier": "Home Light"
+  },
+  {
+    "product_id": "P004",
+    "name": "Water Bottle 750ml",
+    "category": "Lifestyle",
+    "price": 7.2,
+    "in_stock": true,
+    "supplier": "Nordic Home"
+  },
+  {
+    "product_id": "P005",
+    "name": "USB-C Cable 1m",
+    "category": "Electronics",
+    "price": 6.99,
+    "in_stock": true,
+    "supplier": "Tech Bridge"
+  },
+  {
+    "product_id": "P006",
+    "name": "Coffee Mug Classic",
+    "category": "Kitchen",
+    "price": 4.75,
+    "in_stock": true,
+    "supplier": "Ceramica"
+  },
+  {
+    "product_id": "P007",
+    "name": "Sticky Notes Set",
+    "category": "Office",
+    "price": 3.1,
+    "in_stock": true,
+    "supplier": "Baltic Paper"
+  },
+  {
+    "product_id": "P008",
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 14.9,
+    "in_stock": true,
+    "supplier": "Tech Bridge"
+  },
+  {
+    "product_id": "P009",
+    "name": "Tote Bag Canvas",
+    "category": "Lifestyle",
+    "price": 5.5,
+    "in_stock": false,
+    "supplier": "Urban Basic"
+  },
+  {
+    "product_id": "P010",
+    "name": "Tea Box Herbal",
+    "category": "Kitchen",
+    "price": 6.4,
+    "in_stock": true,
+    "supplier": "Green Leaf"
+  }
+]
