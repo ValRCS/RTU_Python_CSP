@@ -37,6 +37,7 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 # 2. diena — Teksta apstrāde un tīrīšana
 
 ## Mērķi
+- Apskatīsim funkcijas jēdzienu
 - Nolasīt un attīrīt neapstrādātus datus
 - Apstrādāt nekārtīgus ievades formātus
 - Apskatīt funkcijas un lambda izteikumus
