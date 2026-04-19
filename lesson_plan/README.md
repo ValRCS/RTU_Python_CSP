@@ -83,20 +83,23 @@ Python as a data processing, automation, and reproducibility tool for statistica
 # Day 4 — Data Sources & Visualization
 
 ## Objectives
-- Integrate multiple data sources
-- Create visual outputs
+- Work through a full `Pandas` workflow from raw input to exported result
+- Integrate multiple data sources and create visual outputs
+- Build report-ready summaries instead of isolated table operations
 
 ## Topics
-- Reading Excel and integrating multiple data sources
-- SQL integration (basic)
-- Advanced Pandas (apply, datetime)
-- Visualization (matplotlib)
-- Automation concepts
+- Reading `CSV`, `Excel`, and `JSON` with `Pandas`
+- Inspecting, cleaning, and standardizing loaded data
+- Filtering, selection, sorting, and SQL-like `query()` syntax
+- Combining tables with `merge` and `concat`
+- Summarizing with `groupby()`, `agg()`, and `pivot_table()`
+- Reshaping data and creating visual outputs with `matplotlib`
+- Exporting cleaned and summarized results
 
 ## Exercises
-- Multi-source pipeline
-- Generate charts
-- Build reusable script
+- Build a mini workflow: load, clean, combine, summarize, visualize, export
+- Compare grouped summaries and pivot-style reports
+- Produce a reusable notebook or script
 
 ---
 

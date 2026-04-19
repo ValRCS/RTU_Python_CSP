@@ -85,20 +85,23 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 # 4. diena — Datu avoti un vizualizācija
 
 ## Mērķi
-- Integrēt vairākus datu avotus
-- Izveidot vizuālus rezultātus
+- Iziet cauri pilnai `Pandas` darba plūsmai no neapstrādātas ievades līdz eksportētam rezultātam
+- Integrēt vairākus datu avotus un izveidot vizuālus rezultātus
+- Veidot atskaitei gatavus kopsavilkumus, nevis izolētas tabulu darbības
 
 ## Tēmas
-- Excel failu nolasīšana un vairāku datu avotu integrācija
-- SQL integrācija (pamati)
-- Paplašināts Pandas (apply, datetime)
-- Vizualizācija (matplotlib)
-- Automatizācijas koncepti
+- `CSV`, `Excel` un `JSON` nolasīšana ar `Pandas`
+- Ielādēto datu apskate, tīrīšana un standartizēšana
+- Filtrēšana, atlase, kārtošana un SQL līdzīgā `query()` sintakse
+- Tabulu apvienošana ar `merge` un `concat`
+- Kopsavilkumi ar `groupby()`, `agg()` un `pivot_table()`
+- Datu formas pārveidošana un vizuālu rezultātu veidošana ar `matplotlib`
+- Attīrīto un kopsavilkto rezultātu eksportēšana
 
 ## Uzdevumi
-- Vairāku avotu konveijers (pipeline)
-- Ģenerēt diagrammas
-- Izveidot atkārtoti lietojamu skriptu
+- Izveidot nelielu darba plūsmu: ielāde, tīrīšana, apvienošana, kopsavilkums, vizualizācija, eksports
+- Salīdzināt grupētus kopsavilkumus un Pivot tipa atskaites
+- Izveidot atkārtoti lietojamu piezīmju bloku vai skriptu
 
 ---
 
