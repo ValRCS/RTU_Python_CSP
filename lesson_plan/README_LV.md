@@ -90,7 +90,7 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 - Veidot atskaitei gatavus kopsavilkumus, nevis izolētas tabulu darbības
 
 ## Tēmas
-- `CSV`, `Excel` un `JSON` nolasīšana ar `Pandas`
+- `CSV`, vairāku lapu `Excel`, `JSON`, `SQLite` un HTML tabulu nolasīšana ar `Pandas`
 - Ielādēto datu apskate, tīrīšana un standartizēšana
 - Filtrēšana, atlase, kārtošana un SQL līdzīgā `query()` sintakse
 - Tabulu apvienošana ar `merge` un `concat`
@@ -99,7 +99,7 @@ Python kā datu apstrādes, automatizācijas un reproducējamības rīks statist
 - Attīrīto un kopsavilkto rezultātu eksportēšana
 
 ## Uzdevumi
-- Izveidot nelielu darba plūsmu: ielāde, tīrīšana, apvienošana, kopsavilkums, vizualizācija, eksports
+- Izveidot nelielu darba plūsmu: ielāde no vairākiem avotiem, tīrīšana, apvienošana, kopsavilkums, vizualizācija, eksports
 - Salīdzināt grupētus kopsavilkumus un Pivot tipa atskaites
 - Izveidot atkārtoti lietojamu piezīmju bloku vai skriptu
 

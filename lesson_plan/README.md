@@ -88,7 +88,7 @@ Python as a data processing, automation, and reproducibility tool for statistica
 - Build report-ready summaries instead of isolated table operations
 
 ## Topics
-- Reading `CSV`, `Excel`, and `JSON` with `Pandas`
+- Reading `CSV`, multi-sheet `Excel`, `JSON`, `SQLite`, and HTML tables with `Pandas`
 - Inspecting, cleaning, and standardizing loaded data
 - Filtering, selection, sorting, and SQL-like `query()` syntax
 - Combining tables with `merge` and `concat`
@@ -97,7 +97,7 @@ Python as a data processing, automation, and reproducibility tool for statistica
 - Exporting cleaned and summarized results
 
 ## Exercises
-- Build a mini workflow: load, clean, combine, summarize, visualize, export
+- Build a mini workflow: load from several sources, clean, combine, summarize, visualize, export
 - Compare grouped summaries and pivot-style reports
 - Produce a reusable notebook or script
 

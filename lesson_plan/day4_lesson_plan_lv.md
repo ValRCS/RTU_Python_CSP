@@ -4,7 +4,7 @@
 4. diena ir veidota ap pilnu `Pandas` darba plūsmu, nevis atsevišķu funkciju sarakstu. Dalībnieki strādā cauri reālistiskai secībai: ielādē datus, apskata tos, attīra, filtrē, apvieno tabulas, veido kopsavilkumus, pārveido rezultātu formu, vizualizē secinājumus un eksportē gala rezultātus. Mērķis nav aptvert pilnīgi visu `Pandas`, bet iemācīt praktisku analīzes darba plūsmu, ko var atkārtoti lietot reālās statistikas un biroja datu situācijās.
 
 ## Mērķi
-- Nolasīt tabulveida datus no `CSV`, `Excel` un `JSON` avotiem ar `Pandas`
+- Nolasīt tabulveida datus no `CSV`, `Excel`, `JSON`, `SQLite` un HTML tabulu avotiem ar `Pandas`
 - Apskatīt ielādētos datus un pamanīt struktūru, tipus un kvalitātes problēmas
 - Attīrīt un standartizēt datus pirms analīzes
 - Lietot elastīgus filtrēšanas un atlases paņēmienus, tai skaitā SQL līdzīgu sintaksi ar `query()`
@@ -31,17 +31,21 @@
 ### 2. Datu ielāde no vairākiem avotiem
 - `CSV` failu nolasīšana ar `pd.read_csv()`
 - `Excel` failu nolasīšana ar `pd.read_excel()`
-- `JSON` failu nolasīšana ar `pd.read_json()`
+- Vienas lapas vai vairāku lapu ielāde no viena `Excel` faila ar `sheet_name`
+- Īss `JSON` ielādes atkārtojums ar `pd.read_json()` un saikne ar 3. dienu
+- Datu nolasīšana no `SQLite` datubāzes ar `pd.read_sql_query()`
+- SQL vaicājuma rezultāta izmantošana kā vēl viena `DataFrame` ievade `Pandas` darba plūsmā
+- HTML tabulu nolasīšana ar `pd.read_html()`
 - Noderīgi parametri:
   - `usecols`
   - `sheet_name`
   - `dtype`
   - `parse_dates`
   - `index_col`
-- Īss uzsvars uz to, ka jāielādē tikai vajadzīgās kolonnas un lapas
-- Īss tilts uz datubāzu darba plūsmām:
-  - kā `Pandas` iekļaujas SQL balstītā darbā
-  - īss pieminējums par `read_sql()` kā nākamo soli, nepadarot to par galveno tēmu
+- Īss uzsvars uz to, ka jāielādē tikai vajadzīgās kolonnas, lapas, rindas un tabulas
+- Pamatideja:
+  - ne visi avoti obligāti jāizmanto tālāk
+  - daļa no šiem `DataFrame` objektiem vēlāk tiks apskatīti, attīrīti, filtrēti un apvienoti
 
 ### 3. Ielādēto datu apskate
 - Ātra apskate ar:
@@ -160,8 +164,12 @@
 ## Praktiskā daļa
 
 ### Uzdevums 1 — vairāku avotu ielāde un apskate
-- Nolasīt vienu `CSV` failu un vienu `Excel` failu `DataFrame` objektos
-- Salīdzināt to struktūru un atrast kolonnas, ko varētu izmantot savienošanai
+- Nolasīt vienu `CSV` failu
+- Nolasīt `Excel` darbgrāmatu un ielādēt vismaz divas dažādas lapas
+- Atkārtoti izmantot vienu `JSON` avotu no 3. dienas un ielādēt to `DataFrame`
+- Ielādēt vienu tabulu no `SQLite` datubāzes vaicājuma
+- Ielādēt vienu HTML tabulu
+- Salīdzināt to struktūru un atrast kolonnas, ko vēlāk varētu izmantot savienošanai
 - Apskatīt datu tipus un trūkstošās vērtības
 
 ### Uzdevums 2 — tīrīšana un standartizēšana
@@ -176,7 +184,8 @@
 - Atveidot vienkāršu SQL tipa `WHERE` nosacījumu gan ar loģiskām maskām, gan ar `query()`
 - Sakārtot un apskatīt iegūto apakškopu
 
-### Uzdevums 4 — datu kopu apvienošana
+### Uzdevums 4 — datu kopu apvienošana pēc sagatavošanas
+- Izvēlēties daļu no iepriekš ielādētajiem avotiem pēc apskates, tīrīšanas un filtrēšanas
 - Apvienot divas saistītas tabulas ar `merge()`
 - Salikt kopā divus līdzīgus izgriezumus ar `concat()`
 - Pārbaudīt, vai gala rezultātam ir gaidītais rindu skaits
@@ -193,7 +202,7 @@
 
 ## Ieteicamais laika sadalījums
 - 15 min — 3. dienas atkārtojums un 4. dienas darba plūsmas pārskats
-- 25 min — `CSV`, `Excel` un `JSON` datu nolasīšana ar `Pandas`
+- 40 min — `CSV`, vairāku lapu `Excel`, `JSON`, `SQLite` un HTML tabulu nolasīšana ar `Pandas`
 - 20 min — struktūras, datu tipu un kvalitātes problēmu apskate
 - 30 min — tīrīšana, tipu maiņa, trūkstošās vērtības un aprēķinātās kolonnas
 - 25 min — filtrēšana, atlase, kārtošana un SQL līdzīgā `query()` sintakse
@@ -201,7 +210,7 @@
 - 30 min — `groupby()`, `agg()` un `pivot_table()`
 - 15 min — datu formas pārveidošana ar `pivot()` un `melt()`
 - 20 min — vizualizācija ar `Pandas` un `matplotlib`
-- 25 min — eksports, mini pilnā darba plūsma un kopsavilkums
+- 10 min — eksports, mini pilnā darba plūsma un kopsavilkums
 
 ## Dienas rezultāts
 Pēc 4. dienas dalībnieki spēj paņemt vairākus neapstrādātus ievades failus, apskatīt to struktūru, attīrīt un standartizēt tos, filtrēt un apvienot datus, izveidot kopsavilkumus un Pivot tipa rezultātus, vizualizēt galvenos secinājumus un eksportēt rezultātus reproducējamā formā. Šajā brīdī `Pandas` kļūst nevis tikai par tabulu bibliotēku, bet par praktisku pilna cikla analīzes darba plūsmu.

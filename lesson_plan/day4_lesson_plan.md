@@ -4,7 +4,7 @@
 Day 4 is built around the full `Pandas` workflow rather than a disconnected list of features. Participants work through a realistic sequence: load data, inspect it, clean it, filter it, combine tables, summarize results, reshape output, visualize findings, and export final artifacts. The goal is not to cover all of `Pandas`, but to teach a practical analysis workflow that participants can reuse in real statistical and office data tasks.
 
 ## Objectives
-- Read tabular data from `CSV`, `Excel`, and `JSON` sources with `Pandas`
+- Read tabular data from `CSV`, `Excel`, `JSON`, `SQLite`, and HTML table sources with `Pandas`
 - Inspect loaded data and identify structure, types, and quality issues
 - Clean and standardize data before analysis
 - Apply flexible filtering and selection patterns, including SQL-like syntax with `query()`
@@ -31,17 +31,21 @@ Day 4 is built around the full `Pandas` workflow rather than a disconnected list
 ### 2. Loading data from multiple sources
 - Reading `CSV` files with `pd.read_csv()`
 - Reading `Excel` files with `pd.read_excel()`
-- Reading `JSON` files with `pd.read_json()`
+- Loading one sheet or several sheets from the same workbook with `sheet_name`
+- Brief recap of `JSON` loading with `pd.read_json()` and how it connects to Day 3
+- Reading from a `SQLite` database with `pd.read_sql_query()`
+- Using SQL results as another `DataFrame` source inside a `Pandas` workflow
+- Reading HTML tables with `pd.read_html()`
 - Useful parameters:
   - `usecols`
   - `sheet_name`
   - `dtype`
   - `parse_dates`
   - `index_col`
-- Brief note on loading only the required columns and sheets
-- Short bridge to database workflows:
-  - how `Pandas` can fit into SQL-based work
-  - brief mention of `read_sql()` as a later extension, without making it the main topic
+- Brief note on loading only the required columns, sheets, rows, and tables
+- Framing idea:
+  - not every source needs to be used later
+  - some of these loaded `DataFrame` objects will later be inspected, cleaned, filtered, and combined
 
 ### 3. Inspecting loaded data
 - Quick inspection with:
@@ -160,8 +164,12 @@ Day 4 is built around the full `Pandas` workflow rather than a disconnected list
 ## Practical Part
 
 ### Exercise 1 — loading and inspecting multiple sources
-- Read one `CSV` file and one `Excel` file into `DataFrame` objects
-- Compare their structure and identify the columns that could be used for joining
+- Read one `CSV` file
+- Read an `Excel` workbook and load at least two different sheets
+- Revisit one `JSON` source from Day 3 and load it into a `DataFrame`
+- Load one table from a `SQLite` database query
+- Load one table from HTML
+- Compare their structure and identify which columns could later be used for joining
 - Inspect data types and missing values
 
 ### Exercise 2 — cleaning and standardizing
@@ -176,7 +184,8 @@ Day 4 is built around the full `Pandas` workflow rather than a disconnected list
 - Reproduce a simple SQL-style `WHERE` condition with both boolean masks and `query()`
 - Sort and preview the final subset
 
-### Exercise 4 — combining datasets
+### Exercise 4 — combining datasets after preparation
+- Choose some of the previously loaded sources after inspection, cleaning, and filtering
 - Combine two related tables with `merge()`
 - Stack two similar extracts with `concat()`
 - Check whether the combined result has the expected number of rows
@@ -193,7 +202,7 @@ Day 4 is built around the full `Pandas` workflow rather than a disconnected list
 
 ## Recommended Time Allocation
 - 15 min — Day 3 recap and Day 4 workflow overview
-- 25 min — reading `CSV`, `Excel`, and `JSON` data with `Pandas`
+- 40 min — reading `CSV`, multi-sheet `Excel`, `JSON`, `SQLite`, and HTML table data with `Pandas`
 - 20 min — inspection of structure, data types, and quality issues
 - 30 min — cleaning, type conversion, missing values, and calculated columns
 - 25 min — filtering, selection, sorting, and SQL-like `query()` syntax
@@ -201,7 +210,7 @@ Day 4 is built around the full `Pandas` workflow rather than a disconnected list
 - 30 min — `groupby()`, `agg()`, and `pivot_table()`
 - 15 min — reshaping with `pivot()` and `melt()`
 - 20 min — visualization with `Pandas` and `matplotlib`
-- 25 min — export, mini end-to-end workflow, and recap
+- 10 min — export, mini end-to-end workflow, and recap
 
 ## Day Outcome
 After Day 4, participants can take several raw input files, inspect their structure, clean and standardize them, filter and combine them, create summaries and pivot-style outputs, visualize the main findings, and export results in a reproducible form. At this point, `Pandas` becomes not just a table library, but a practical end-to-end analysis workflow.
