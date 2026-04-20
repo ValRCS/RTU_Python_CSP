@@ -106,20 +106,25 @@ Python as a data processing, automation, and reproducibility tool for statistica
 # Day 5 — Machine Learning Basics
 
 ## Objectives
-- Understand ML workflow
-- Apply simple models
+- Complete the missing Day 4 summary and visualization work
+- Understand the basic ML workflow
+- Apply simple models to prepared data
 
 ## Topics
+- Finalizing grouped summaries and charts from the Day 4 dataset
+- Moving from descriptive analysis to predictive thinking
 - Supervised learning overview
+- Preparing features and target columns
+- Train/test split
 - Regression
 - Classification
-- Train/test split
-- Model evaluation
+- Model evaluation and interpretation
 
 ## Exercises
-- Build regression model
-- Build classification model
-- Apply model to dataset
+- Finish one summary table and one chart from the Day 4 workflow
+- Build a simple regression model
+- Build a simple classification model
+- Apply a model to a prepared dataset and interpret the result
 
 ---
 
