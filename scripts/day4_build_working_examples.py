@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import csv
+import html
 import json
 import sqlite3
+import zipfile
 from pathlib import Path
 from textwrap import dedent
 
@@ -349,6 +351,160 @@ def write_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
+def column_letter(index: int) -> str:
+    letters: list[str] = []
+    while index > 0:
+        index, remainder = divmod(index - 1, 26)
+        letters.append(chr(65 + remainder))
+    return "".join(reversed(letters))
+
+
+def excel_cell_reference(row_number: int, column_number: int) -> str:
+    return f"{column_letter(column_number)}{row_number}"
+
+
+def xml_cell(value: object, row_number: int, column_number: int) -> str:
+    cell_ref = excel_cell_reference(row_number, column_number)
+    if isinstance(value, bool):
+        numeric = "1" if value else "0"
+        return f'<c r="{cell_ref}" t="b"><v>{numeric}</v></c>'
+    if isinstance(value, (int, float)):
+        return f'<c r="{cell_ref}"><v>{value}</v></c>'
+
+    escaped = html.escape("" if value is None else str(value))
+    return f'<c r="{cell_ref}" t="inlineStr"><is><t>{escaped}</t></is></c>'
+
+
+def worksheet_xml(rows: list[dict]) -> str:
+    headers = list(rows[0].keys())
+    xml_rows: list[str] = []
+
+    header_cells = [
+        xml_cell(header, row_number=1, column_number=index + 1)
+        for index, header in enumerate(headers)
+    ]
+    xml_rows.append(f'<row r="1">{"".join(header_cells)}</row>')
+
+    for row_number, row in enumerate(rows, start=2):
+        row_cells = [
+            xml_cell(row.get(header), row_number=row_number, column_number=index + 1)
+            for index, header in enumerate(headers)
+        ]
+        xml_rows.append(f'<row r="{row_number}">{"".join(row_cells)}</row>')
+
+    last_cell = excel_cell_reference(len(rows) + 1, len(headers))
+    return (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+        f"<dimension ref=\"A1:{last_cell}\"/>"
+        "<sheetViews><sheetView workbookViewId=\"0\"/></sheetViews>"
+        "<sheetFormatPr defaultRowHeight=\"15\"/>"
+        f"<sheetData>{''.join(xml_rows)}</sheetData>"
+        "</worksheet>"
+    )
+
+
+def write_simple_xlsx(path: Path, sheets: dict[str, list[dict]]) -> None:
+    content_types = [
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+        '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">',
+        '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>',
+        '<Default Extension="xml" ContentType="application/xml"/>',
+        '<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>',
+        '<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>',
+        '<Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>',
+        '<Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/>',
+    ]
+    for index in range(1, len(sheets) + 1):
+        content_types.append(
+            f'<Override PartName="/xl/worksheets/sheet{index}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>'
+        )
+    content_types.append("</Types>")
+
+    workbook_sheets = []
+    workbook_relationships = []
+    app_titles = []
+    for index, sheet_name in enumerate(sheets.keys(), start=1):
+        escaped_name = html.escape(sheet_name)
+        workbook_sheets.append(
+            f'<sheet name="{escaped_name}" sheetId="{index}" r:id="rId{index}"/>'
+        )
+        workbook_relationships.append(
+            f'<Relationship Id="rId{index}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet{index}.xml"/>'
+        )
+        app_titles.append(f"<vt:lpstr>{escaped_name}</vt:lpstr>")
+
+    workbook_xml = (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" '
+        'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
+        f"<sheets>{''.join(workbook_sheets)}</sheets>"
+        "</workbook>"
+    )
+
+    workbook_rels_xml = (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+        f"{''.join(workbook_relationships)}"
+        '<Relationship Id="rIdStyles" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>'
+        "</Relationships>"
+    )
+
+    package_rels_xml = (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+        '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>'
+        '<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/>'
+        '<Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml"/>'
+        "</Relationships>"
+    )
+
+    styles_xml = (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+        '<fonts count="1"><font><sz val="11"/><name val="Calibri"/></font></fonts>'
+        '<fills count="1"><fill><patternFill patternType="none"/></fill></fills>'
+        '<borders count="1"><border/></borders>'
+        '<cellStyleXfs count="1"><xf/></cellStyleXfs>'
+        '<cellXfs count="1"><xf xfId="0"/></cellXfs>'
+        '<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>'
+        "</styleSheet>"
+    )
+
+    core_xml = (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" '
+        'xmlns:dc="http://purl.org/dc/elements/1.1/" '
+        'xmlns:dcterms="http://purl.org/dc/terms/" '
+        'xmlns:dcmitype="http://purl.org/dc/dcmitype/" '
+        'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'
+        "<dc:creator>Codex</dc:creator>"
+        "<cp:lastModifiedBy>Codex</cp:lastModifiedBy>"
+        "</cp:coreProperties>"
+    )
+
+    app_xml = (
+        '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        '<Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" '
+        'xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">'
+        "<Application>Codex</Application>"
+        f"<TitlesOfParts><vt:vector size=\"{len(sheets)}\" baseType=\"lpstr\">{''.join(app_titles)}</vt:vector></TitlesOfParts>"
+        f"<HeadingPairs><vt:vector size=\"2\" baseType=\"variant\"><vt:variant><vt:lpstr>Worksheets</vt:lpstr></vt:variant><vt:variant><vt:i4>{len(sheets)}</vt:i4></vt:variant></vt:vector></HeadingPairs>"
+        "</Properties>"
+    )
+
+    with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        archive.writestr("[Content_Types].xml", "".join(content_types))
+        archive.writestr("_rels/.rels", package_rels_xml)
+        archive.writestr("docProps/core.xml", core_xml)
+        archive.writestr("docProps/app.xml", app_xml)
+        archive.writestr("xl/workbook.xml", workbook_xml)
+        archive.writestr("xl/_rels/workbook.xml.rels", workbook_rels_xml)
+        archive.writestr("xl/styles.xml", styles_xml)
+        for index, rows in enumerate(sheets.values(), start=1):
+            archive.writestr(f"xl/worksheets/sheet{index}.xml", worksheet_xml(rows))
+
+
 def build_data_files() -> None:
     for path in (RAW_DIR, INTERIM_DIR, OUTPUT_DIR):
         path.mkdir(parents=True, exist_ok=True)
@@ -398,6 +554,11 @@ def build_data_files() -> None:
             TARGET_RECORDS,
         )
         connection.commit()
+
+    write_simple_xlsx(
+        RAW_DIR / "reference_tables.xlsx",
+        {"products": PRODUCT_RECORDS, "stores": STORE_RECORDS},
+    )
 
 
 def build_notebook() -> None:
