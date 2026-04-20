@@ -1,0 +1,37 @@
+[
+  {
+    "product_code": "P100",
+    "product_name": "Notebook Set",
+    "category": "Office",
+    "subcategory": "Paper",
+    "base_price": 12.5
+  },
+  {
+    "product_code": "P200",
+    "product_name": "Wireless Keyboard",
+    "category": "Electronics",
+    "subcategory": "Accessories",
+    "base_price": 85.0
+  },
+  {
+    "product_code": "P300",
+    "product_name": "Desk Lamp",
+    "category": "Office",
+    "subcategory": "Lighting",
+    "base_price": 42.0
+  },
+  {
+    "product_code": "P400",
+    "product_name": "Monitor 24",
+    "category": "Electronics",
+    "subcategory": "Display",
+    "base_price": 210.0
+  },
+  {
+    "product_code": "P500",
+    "product_name": "Coffee Beans Pack",
+    "category": "Breakroom",
+    "subcategory": "Supplies",
+    "base_price": 15.0
+  }
+]

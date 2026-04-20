@@ -1,0 +1,10 @@
+Order ID,Order Date,Store Code,Product Code,Customer Segment ,Units,Unit Price,Discount %,Sales Channel,Promo Flag
+1001,2026-01-03,S001,P100,Consumer,4,12.5,0.0,Online,yes
+1002,2026-01-05,S002,P200,Corporate,2,85.0,0.1,Retail ,no
+1003,2026-01-07,S003,P400,Consumer,1,210.0,,Online,yes
+1004,2026/01/10,S004,P300,Home Office,3,42.0,0.05,Retail,No
+1005,15-01-2026,S001,P100,consumer,5,12.5,0.15,Online,YES
+1006,2026-01-18,S005,P500,Corporate,2,15.0,0.0,Wholesale,no
+1006,2026-01-18,S005,P500,Corporate,2,15.0,0.0,Wholesale,no
+1007,2026-01-22,S002,P999,Consumer,1,30.0,0.0,Online,yes
+1008,2026-01-28,S006,P200,,2,85.0,0.2,Retail,yes

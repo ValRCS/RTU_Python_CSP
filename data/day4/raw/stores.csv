@@ -1,0 +1,6 @@
+store_code,store_name,region,city,opened_year,store_type
+S001,Riga Central,Riga,Riga,2018,Flagship
+S002,Liepaja Coast,Kurzeme,Liepaja,2020,Retail
+S003,Daugavpils East,Latgale,Daugavpils,2019,Retail
+S004,Cesis North,Vidzeme,Cesis,2021,Outlet
+S005,Jelgava South,Zemgale,Jelgava,2017,Warehouse
