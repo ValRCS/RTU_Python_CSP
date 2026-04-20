@@ -1,0 +1,15 @@
+order_id,order_date,order_month,store_code,product_code,customer_segment,units,unit_price,discount_pct,sales_channel,promo_flag,net_revenue,source_month,product_name,category,subcategory,base_price,product_match,store_name,region,city,opened_year,store_type,store_match
+1001,2026-01-03,2026-01,S001,P100,Consumer,4,12.5,0.0,Online,True,50.0,2026-01,Notebook Set,Office,Paper,12.5,both,Riga Central,Riga,Riga,2018.0,Flagship,both
+1002,2026-01-05,2026-01,S002,P200,Corporate,2,85.0,0.1,Retail,False,153.0,2026-01,Wireless Keyboard,Electronics,Accessories,85.0,both,Liepaja Coast,Kurzeme,Liepaja,2020.0,Retail,both
+1003,2026-01-07,2026-01,S003,P400,Consumer,1,210.0,0.0,Online,True,210.0,2026-01,Monitor 24,Electronics,Display,210.0,both,Daugavpils East,Latgale,Daugavpils,2019.0,Retail,both
+1004,2026-01-10,,S004,P300,Home Office,3,42.0,0.05,Retail,False,119.7,2026-01,Desk Lamp,Office,Lighting,42.0,both,Cesis North,Vidzeme,Cesis,2021.0,Outlet,both
+1005,2026-01-15,,S001,P100,Consumer,5,12.5,0.15,Online,True,53.12,2026-01,Notebook Set,Office,Paper,12.5,both,Riga Central,Riga,Riga,2018.0,Flagship,both
+1007,2026-01-22,2026-01,S002,P999,Consumer,1,30.0,0.0,Online,True,30.0,2026-01,,,,,left_only,Liepaja Coast,Kurzeme,Liepaja,2020.0,Retail,both
+1008,2026-01-28,2026-01,S006,P200,Unknown,2,85.0,0.2,Retail,True,136.0,2026-01,Wireless Keyboard,Electronics,Accessories,85.0,both,,,,,,left_only
+2001,2026-02-02,2026-02,S001,P200,Corporate,1,85.0,0.0,Online,False,85.0,2026-02,Wireless Keyboard,Electronics,Accessories,85.0,both,Riga Central,Riga,Riga,2018.0,Flagship,both
+2002,2026-02-05,2026-02,S003,P300,Consumer,4,42.0,0.1,Retail,True,151.2,2026-02,Desk Lamp,Office,Lighting,42.0,both,Daugavpils East,Latgale,Daugavpils,2019.0,Retail,both
+2003,2026-02-09,2026-02,S004,P400,Home Office,1,210.0,0.15,Retail,False,178.5,2026-02,Monitor 24,Electronics,Display,210.0,both,Cesis North,Vidzeme,Cesis,2021.0,Outlet,both
+2006,2026-02-20,2026-02,S001,P300,Consumer,2,42.0,0.0,Online,False,84.0,2026-02,Desk Lamp,Office,Lighting,42.0,both,Riga Central,Riga,Riga,2018.0,Flagship,both
+2007,2026-02-23,2026-02,S003,P400,Consumer,1,210.0,0.2,Online,True,168.0,2026-02,Monitor 24,Electronics,Display,210.0,both,Daugavpils East,Latgale,Daugavpils,2019.0,Retail,both
+2008,2026-02-27,2026-02,S002,P200,Corporate,3,85.0,0.05,Retail,True,242.25,2026-02,Wireless Keyboard,Electronics,Accessories,85.0,both,Liepaja Coast,Kurzeme,Liepaja,2020.0,Retail,both
+2009,2026-02-28,2026-02,S001,P100,Consumer,2,12.5,0.0,Online,False,25.0,2026-02,Notebook Set,Office,Paper,12.5,both,Riga Central,Riga,Riga,2018.0,Flagship,both
